@@ -1,0 +1,1902 @@
+<6>[    0.000000] Initializing cgroup subsys cpu
+<5>[    0.000000] Linux version 3.0.8-perf (build@PRIMERGY014) (gcc version 4.4.3 (GCC) ) #1 PREEMPT Fri Oct 5 16:46:47 JST 2012
+<4>[    0.000000] CPU: ARMv7 Processor [511f00f2] revision 2 (ARMv7), cr=10c53c7d
+<4>[    0.000000] CPU: VIPT nonaliasing data cache, VIVT ASID tagged instruction cache
+<4>[    0.000000] Machine: QCT MSM8X55 FFA
+<4>[    0.000000] Ignoring unrecognised tag 0x5441000c
+<5>[    0.000000] membank size = 0x20000000
+<6>[    0.000000] memory pool 2 (start 1be00000 size 4200000) initialized
+<4>[    0.000000] Memory policy: ECC disabled, Data cache writeback
+<3>[    0.000000] smem_find(137, 72): wrong size 64
+<6>[    0.000000] socinfo_init: v4, id=74, ver=2.1, raw_id=1394, raw_ver=2, hw_plat=2, hw_plat_ver=0
+<7>[    0.000000] On node 0 totalpages: 229344
+<7>[    0.000000]   Normal zone: 2108 pages used for memmap
+<7>[    0.000000]   Normal zone: 0 pages reserved
+<7>[    0.000000]   Normal zone: 104388 pages, LIFO batch:31
+<7>[    0.000000]   HighMem zone: 960 pages used for memmap
+<7>[    0.000000]   HighMem zone: 121888 pages, LIFO batch:31
+<6>[    0.000000] allocating 7864320 bytes at c1954000 (1b54000 physical) for fb
+<6>[    0.000000] allocating 131072 bytes at fffe0000 (5ffe0000 physical) for ram_console
+<7>[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+<7>[    0.000000] pcpu-alloc: [0] 0 
+<4>[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 226276
+<5>[    0.000000] Kernel command line: console=ttyDCC0 androidboot.hardware=F11D hw_id=7 androidboot.emmc=true androidboot.serialno=F11Db11a80d androidboot.baseband=msm
+<6>[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+<6>[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.000000] Memory: 60MB 324MB 511MB = 895MB total
+<5>[    0.000000] Memory: 884160k/884160k available, 100800k reserved, 491392K highmem
+<5>[    0.000000] Virtual kernel memory layout:
+<5>[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[    0.000000]     DMA     : 0xff000000 - 0xffe00000   (  14 MB)
+<5>[    0.000000]     vmalloc : 0xe2800000 - 0xfa000000   ( 376 MB)
+<5>[    0.000000]     lowmem  : 0xc0000000 - 0xe2000000   ( 544 MB)
+<5>[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>[    0.000000]       .init : 0xc0008000 - 0xc0041000   ( 228 kB)
+<5>[    0.000000]       .text : 0xc0041000 - 0xc08c0bfc   (8703 kB)
+<5>[    0.000000]       .data : 0xc08c2000 - 0xc0979198   ( 733 kB)
+<5>[    0.000000]        .bss : 0xc0c00024 - 0xc1085628   (4630 kB)
+<6>[    0.000000] Preemptible hierarchical RCU implementation.
+<6>[    0.000000] NR_IRQS:566
+<6>[    0.000000] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 131071999ms
+<6>[    0.000091] Calibrating delay loop... 680.75 BogoMIPS (lpj=3403776)
+<6>[    0.060058] pid_max: default: 32768 minimum: 301
+<6>[    0.060180] Mount-cache hash table entries: 512
+<6>[    0.060424] Initializing cgroup subsys cpuacct
+<6>[    0.060455] Initializing cgroup subsys freezer
+<6>[    0.060485] CPU: Testing write buffer coherency: ok
+<6>[    0.060607] hw perfevents: enabled with ARMv7 Scorpion PMU driver, 5 counters available
+<6>[    0.062316] print_constraints: dummy: 
+<3>[    0.062347] rdev_init_debugfs: Error-Bad Function Input
+<6>[    0.062438] NET: Registered protocol family 16
+<6>[    0.063385] Clock ownership
+<6>[    0.063415]   GLBL  : 07d82110
+<6>[    0.063415]   APPS  : fe6001c3 1000003f 00000c7f
+<6>[    0.063415]   ROW   : 000a8094 00000c0b
+<6>[    0.063568] acpuclk_7x30_init()
+<6>[    0.064178] ACPU running at 1024000 KHz
+<6>[    0.064636] print_constraints: smps0: 500 <--> 1500 mV normal 
+<6>[    0.064727] print_constraints: smps1: 500 <--> 1500 mV normal 
+<6>[    0.064819] print_constraints: smps2: 1300 mV normal 
+<6>[    0.064910] print_constraints: smps3: 1800 mV normal 
+<6>[    0.065002] print_constraints: smps4: 2200 mV normal 
+<6>[    0.065093] print_constraints: ldo00: 1200 mV normal 
+<6>[    0.065185] print_constraints: ldo02: 2600 mV normal 
+<6>[    0.065277] print_constraints: ldo03: 1800 <--> 3000 mV normal 
+<6>[    0.065368] print_constraints: ldo04: 2850 mV normal 
+<6>[    0.065460] print_constraints: ldo05: 2850 mV normal 
+<6>[    0.065551] print_constraints: ldo06: 3075 <--> 3400 mV normal 
+<6>[    0.065643] print_constraints: ldo07: 1800 mV normal 
+<6>[    0.065765] print_constraints: ldo08: 1800 mV normal 
+<6>[    0.065856] print_constraints: ldo09: 2050 mV normal 
+<6>[    0.065948] print_constraints: ldo10: 2850 mV normal 
+<6>[    0.066040] print_constraints: ldo11: 2800 mV normal 
+<6>[    0.066162] print_constraints: ldo12: 1800 mV normal 
+<6>[    0.066253] print_constraints: ldo13: 2800 mV normal 
+<6>[    0.066345] print_constraints: ldo14: 2850 mV normal 
+<6>[    0.066436] print_constraints: ldo15: 3050 <--> 3100 mV normal 
+<6>[    0.066558] print_constraints: ldo16: 3000 mV normal 
+<6>[    0.066680] print_constraints: ldo17: 1800 mV normal 
+<6>[    0.066772] print_constraints: ldo18: 2200 mV normal 
+<6>[    0.066864] print_constraints: ldo19: 2800 mV normal 
+<6>[    0.066986] print_constraints: ldo20: 1500 <--> 1800 mV normal 
+<6>[    0.067077] print_constraints: ldo21: 1100 mV normal 
+<6>[    0.067169] print_constraints: ldo22: 1100 <--> 1300 mV normal 
+<6>[    0.067291] print_constraints: ldo23: 1350 mV normal 
+<6>[    0.067382] print_constraints: ldo24: 1200 mV normal 
+<6>[    0.067504] print_constraints: ldo25: 1200 mV normal 
+<6>[    0.067596] print_constraints: lvsw0: normal 
+<6>[    0.067718] print_constraints: lvsw1: normal 
+<6>[    0.067810] print_constraints: ncp: 1800 mV normal 
+<6>[    0.068664] pm8058_probe: PMIC revision: E3
+<6>[    0.069610] pm_gpio_probe: OK: base=182, ngpio=40
+<6>[    0.069793] pm8xxx_mpp_probe: OK: base=222, ngpio=12
+<6>[    0.071868] ram_console: got buffer at 5ffe0000, size 20000
+<6>[    0.071899] ram_console: no valid data in buffer (sig = 0xc0c0c0c0)
+<6>[    0.072052] console [ram-1] enabled
+<3>[    0.072967] i2c_pull_up_voltage
+<6>[    0.074279] snddev_poweramp_gpio_init 
+<6>[    0.074310] aux_pcm_gpio_init 
+<4>[    0.074432] [fct] nm boot.
+<6>[    0.074615] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=138, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.074645] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=139, func=0x01, dir=0x00, pull=0x01, drvstr=0x00 => 0
+<6>[    0.074707] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=140, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.074768] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=141, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.074829] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=147, func=0x00, dir=0x00, pull=0x03, drvstr=0x00 => 0
+<6>[    0.074890] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=150, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.074951] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=41, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.075012] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=43, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.075073] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=149, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.075134] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=39, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.075164] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=49, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.075225] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=50, func=0x01, dir=0x00, pull=0x00, drvstr=0x00 => 0
+<6>[    0.075286] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=51, func=0x01, dir=0x00, pull=0x00, drvstr=0x00 => 0
+<6>[    0.075347] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=52, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    0.075378] bcm43xx_gpio_request(): calling gpio_request(149, KO_WLAN_BT_PWR_ONOFF) => 0
+<6>[    0.075378] bcm43xx_gpio_request(): calling gpio_request(39, KO_WLAN_PWON) => 0
+<6>[    0.075408] bcm43xx_gpio_direction_output(): calling gpio_direction_output(149) => 0
+<6>[    0.075408] bcm43xx_gpio_direction_output(): calling gpio_direction_output(39) => 0
+<6>[    0.075439] bcm43xx_gpio_direction_input(): calling gpio_direction_input(212)
+<4>[    0.075439] ------------[ cut here ]------------
+<4>[    0.075469] WARNING: at /home/build/p4wk/SWORDFISH/ICS/main/LINUX/android/kernel/drivers/gpio/gpiolib.c:101 gpio_ensure_requested+0x4c/0x118()
+<4>[    0.075469] autorequest GPIO-212
+<4>[    0.075500] Modules linked in:
+<4>[    0.075531] [<c004cf3c>] (unwind_backtrace+0x0/0x12c) from [<c00ebcf8>] (warn_slowpath_common+0x68/0x88)
+<4>[    0.075561] [<c00ebcf8>] (warn_slowpath_common+0x68/0x88) from [<c00ebd98>] (warn_slowpath_fmt+0x2c/0x3c)
+<4>[    0.075561] [<c00ebd98>] (warn_slowpath_fmt+0x2c/0x3c) from [<c029ffb8>] (gpio_ensure_requested+0x4c/0x118)
+<4>[    0.075592] [<c029ffb8>] (gpio_ensure_requested+0x4c/0x118) from [<c02a03d0>] (gpio_direction_input+0x84/0x18c)
+<4>[    0.075622] [<c02a03d0>] (gpio_direction_input+0x84/0x18c) from [<c0014348>] (msm7x30_init+0x66c/0xb5c)
+<4>[    0.075653] [<c0014348>] (msm7x30_init+0x66c/0xb5c) from [<c000b448>] (customize_machine+0x1c/0x28)
+<4>[    0.075683] [<c000b448>] (customize_machine+0x1c/0x28) from [<c0041400>] (do_one_initcall+0xac/0x18c)
+<4>[    0.075683] [<c0041400>] (do_one_initcall+0xac/0x18c) from [<c0008374>] (kernel_init+0x74/0x124)
+<4>[    0.075714] [<c0008374>] (kernel_init+0x74/0x124) from [<c00481ec>] (kernel_thread_exit+0x0/0x8)
+<4>[    0.075744] ---[ end trace 1b75b31a2719ed1c ]---
+<6>[    0.075775] fm_i2s_gpio_init 
+<4>[    0.075805] fm_i2s_gpio_init: gpio_tlmm_config(144) rc=0
+<4>[    0.075866] fm_i2s_gpio_init: gpio_tlmm_config(145) rc=0
+<4>[    0.075897] fm_i2s_gpio_init: gpio_tlmm_config(146) rc=0
+<5>[    0.076629] Boot Reason = 0x00
+<6>[    0.079040] print_constraints: fs_gfx2d0: normal 
+<6>[    0.079193] print_constraints: fs_gfx3d: normal 
+<6>[    0.079345] print_constraints: fs_mdp: normal 
+<6>[    0.079467] print_constraints: fs_mfc: normal 
+<6>[    0.079589] print_constraints: fs_rot: normal 
+<6>[    0.079711] print_constraints: fs_vfe: normal 
+<6>[    0.079864] print_constraints: fs_vpe: normal 
+<6>[    0.088775] bio: create slab <bio-0> at 0
+<5>[    0.089019] pmic8058_pwm_probe: OK
+<5>[    0.089324] SCSI subsystem initialized
+<6>[    0.089538] usbcore: registered new interface driver usbfs
+<6>[    0.089599] usbcore: registered new interface driver hub
+<6>[    0.089691] usbcore: registered new device driver usb
+<4>[    0.089935] i2c i2c-8: Not I2C compliant: can't read SCL
+<4>[    0.089965] i2c i2c-8: Bus may be unreliable
+<6>[    0.089965] i2c-gpio i2c-gpio.8: using pins 2 (SDA) and 3 (SCL, no clock stretching)
+<6>[    0.090057] msm_i2c_probe
+<6>[    0.090179] msm_i2c_probe: clk_ctl 31b, 320000 Hz
+<6>[    0.090667] msm_i2c_probe
+<6>[    0.090759] msm_i2c_probe: clk_ctl 35d, 100000 Hz
+<6>[    0.091156] Advanced Linux Sound Architecture Driver Version 1.0.24.
+<6>[    0.091522] Bluetooth: Core ver 2.16
+<6>[    0.091552] NET: Registered protocol family 31
+<6>[    0.091583] Bluetooth: HCI device and connection manager initialized
+<6>[    0.091583] Bluetooth: HCI socket layer initialized
+<6>[    0.091613] Bluetooth: L2CAP socket layer initialized
+<3>[    0.091705] blueHC hci_register_proto: c095d680 name L2CAP id 0
+<3>[    0.091735] blueHC hci_register_amp: c095d780
+<3>[    0.091796] blueHC hci_register_proto: c095d7a8 name SCO id 1
+<6>[    0.091796] Bluetooth: SCO socket layer initialized
+<6>[    0.092224] Switching to clocksource gp_timer
+<6>[    0.092926] NET: Registered protocol family 2
+<6>[    0.093017] IP route cache hash table entries: 16384 (order: 4, 65536 bytes)
+<6>[    0.093261] TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+<6>[    0.094238] TCP bind hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.094726] TCP: Hash tables configured (established 65536 bind 65536)
+<6>[    0.094726] TCP reno registered
+<6>[    0.094757] UDP hash table entries: 256 (order: 0, 4096 bytes)
+<6>[    0.094787] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+<6>[    0.095031] NET: Registered protocol family 1
+<6>[    0.095153] cfg80211: Calling CRDA to update world regulatory domain
+<6>[    0.095275] RPC: Registered named UNIX socket transport module.
+<6>[    0.095306] RPC: Registered udp transport module.
+<6>[    0.095306] RPC: Registered tcp transport module.
+<6>[    0.095336] RPC: Registered tcp NFSv4.1 backchannel transport module.
+<6>[    0.095458] Trying to unpack rootfs image as initramfs...
+<6>[    0.114746] Freeing initrd memory: 332K
+<6>[    0.114868] PMU: registered new PMU device of type 0
+<6>[    0.115142] sdio_al:SDIO-AL SW version 1.30
+<3>[    0.116027] smem_find(419, 16): wrong size 8
+<4>[    0.118255] get_nand_partitions: no flash partition table in shared memory
+<3>[    0.119415] Notify: smsm init
+<6>[    0.122039] [afe.c:afe_init] AFE driver init
+<6>[    0.122192] rpcrouter_smd_remote_notify: smd opened 0x  (null)
+<6>[    0.122833] [audpp.c:audpp_probe] Number of decoder supported  5
+<6>[    0.122863] [audpp.c:audpp_probe] Number of concurrency supported  7
+<6>[    0.122863] [audpp.c:audpp_probe] module_name:AUDPLAY4TASK
+<6>[    0.122894] [audpp.c:audpp_probe] queueid:17
+<6>[    0.122894] [audpp.c:audpp_probe] decid:4
+<6>[    0.122894] [audpp.c:audpp_probe] nr_codec_support:1
+<6>[    0.122924] [audpp.c:audpp_probe] module_name:AUDPLAY3TASK
+<6>[    0.122924] [audpp.c:audpp_probe] queueid:16
+<6>[    0.122924] [audpp.c:audpp_probe] decid:3
+<6>[    0.122955] [audpp.c:audpp_probe] nr_codec_support:11
+<6>[    0.122955] [audpp.c:audpp_probe] module_name:AUDPLAY2TASK
+<6>[    0.122955] [audpp.c:audpp_probe] queueid:15
+<6>[    0.122985] [audpp.c:audpp_probe] decid:2
+<6>[    0.122985] [audpp.c:audpp_probe] nr_codec_support:11
+<6>[    0.122985] [audpp.c:audpp_probe] module_name:AUDPLAY1TASK
+<6>[    0.123016] [audpp.c:audpp_probe] queueid:14
+<6>[    0.123016] [audpp.c:audpp_probe] decid:1
+<6>[    0.123016] [audpp.c:audpp_probe] nr_codec_support:11
+<6>[    0.123046] [audpp.c:audpp_probe] module_name:AUDPLAY0TASK
+<6>[    0.123046] [audpp.c:audpp_probe] queueid:13
+<6>[    0.123046] [audpp.c:audpp_probe] decid:0
+<6>[    0.123077] [audpp.c:audpp_probe] nr_codec_support:11
+<6>[    0.123687] [snddev_ecodec.c:snddev_ecodec_init] snddev_ecodec_init
+<3>[    0.127990] rpcrouter: Server create rejected, version = 0, program = 3000001f
+<6>[    0.134948] [adsp.c:adsp_rtos_mtoa_cb] INIT_INFO Event
+<6>[    0.135040] [adsp.c:adsp_init] msm_adsp -- 0
+<6>[    0.135345] [lpa.c:lpa_probe] lpa probe
+<6>[    0.135559] audio_mvs_init:
+<6>[    0.135559] __msm_rpc_connect: server not found 30000014:50001
+<3>[    0.135589] audio_mvs_init: MVS RPC connect failed ver 0x50001
+<6>[    0.135589] __msm_rpc_connect: server not found 30000014:40001
+<3>[    0.135589] audio_mvs_init: MVS RPC connect failed ver 0x40001
+<6>[    0.135925] rmt_storage_get_ramfs: RAMFS entry: addr = 0x07700000, size = 0x00300000
+<6>[    0.136047] rmt_storage_probe: Remote storage RPC client (0x300000a7)initialized
+<6>[    0.136077] audio_mvs_thread:
+<3>[    0.140625] msm_rpc_client_req2: RPC call was not successful (3)
+<3>[    0.140625] rmt_storage_reg_cb: Failed to register callback for event 7
+<6>[    0.140655] rmt_storage_reg_callbacks: Unable (-22) registering aloc_rmt_buf
+<4>[    0.153411] highmem bounce pool size: 64 pages
+<6>[    0.153594] ashmem: initialized
+<6>[    0.154296] fuse init (API version 7.16)
+<7>[    0.154449] yaffs: yaffs built Oct  5 2012 16:46:12 Installing.
+<6>[    0.154479] msgmni has been set to 767
+<6>[    0.155273] io scheduler noop registered
+<6>[    0.155334] io scheduler cfq registered (default)
+<4>[    0.155364] wm0010(2163):wm0010_init
+<4>[    0.155364] wm0010(2169):CONFIG_GPIO_APO
+<0>[    0.159057] [LCD]lcdc_chimei_panel_init
+<0>[    0.159118] [LCD]chimei_probe
+<0>[    0.159393] [LCD]chimei_probe
+<6>[    0.159423] setting pdata->panel_info.fb_num to 3. type: 3
+<6>[    0.164245] FrameBuffer[0] 480x800 size=4608000 bytes is registered successfully!
+<3>[    0.166564] pm_runtime: fail to wake up
+<0>[    0.192535] [LCD]lcdc_chimei_panel_power
+<0>[    0.193237] [LCD]lcdc_chimei_panel_on
+<0>[    0.193237] [LCD]chimei_disp_powerup
+<0>[    0.193237] [LCD]chimei_disp_on
+<7>[    0.318359] Registered led device: lcd-backlight
+<6>[    0.318450] adv7520_init
+<6>[    0.319274] 
+<6>[    0.319305]  msm_vidc_enc: Inside vid_enc_init()
+<6>[    0.319427] 
+<6>[    0.319427]  msm_vidc_enc: Inside vid_enc_vcd_init()
+<6>[    0.319671] msm_serial: detected port #1
+<6>[    0.319763] msm_serial.1: ttyMSM1 at MMIO 0xacb00000 (irq = 69) is a MSM
+<6>[    0.332916] msm_serial: driver initialized
+<6>[    0.333160] msm_serial_hs.1: ttyHS1 at MMIO 0xa3200000 (irq = 75) is a MSM HS UART
+<6>[    0.352508] msm_serial_hs module loaded
+<6>[    0.352935] msm_rotator_probe: rotator_hw_revision=0
+<6>[    0.354797] kgsl kgsl-3d0: |kgsl_gpummu_init| MMU type set for device is GPUMMU
+<6>[    0.355834] kgsl kgsl-2d0: |kgsl_gpummu_init| MMU type set for device is GPUMMU
+<6>[    0.358184] brd: module loaded
+<6>[    0.359832] loop: module loaded
+<6>[    0.359954] pmem: Initializing pmem (user-space) as cached
+<6>[    0.360107] allocating 24117248 bytes at   (null) (1be00000 physical) for pmem
+<6>[    0.360168] pmem: Initializing pmem_adsp (user-space) as non-cached
+<6>[    0.360260] allocating 36700160 bytes at   (null) (1d500000 physical) for pmem_adsp
+<6>[    0.360321] pmem: Initializing pmem_audio (user-space) as non-cached
+<6>[    0.360412] allocating 2097152 bytes at   (null) (1f800000 physical) for pmem_audio
+<6>[    0.360656] msm_tsif msm_tsif.0: remapped phys 0xa3400000 => virt e2836000
+<6>[    0.360870] msm_tsif msm_tsif.0: Configured irq 77 memory 0xa3400000 DMA 10 CRCI 10
+<6>[    0.360992] tsif_init_one[0]
+<6>[    0.361114] tsif tsif0: Device 240.0 attached to TSIF, buffer size 0
+<4>[    0.361175] i2c-core: driver [isa1200] using legacy suspend method
+<4>[    0.361175] i2c-core: driver [isa1200] using legacy resume method
+<5>[    0.361297] pm8xxx_upl_probe: OK
+<3>[    0.361480] ftdtv_init - alloc_chrdev_region(&dev, 0, 2, ftdtv)
+<3>[    0.361511] ftdtv_init - ftdtv_class = class_create
+<3>[    0.361541] ftdtv_init - tdtv_setup_cdev
+<3>[    0.361633] ftdtv_power:0
+<6>[    0.490539] adie_codec_register_codec_operations: codec type 1
+<6>[    0.491119] SCSI Media Changer driver v0.25 
+<6>[    0.491516] msm_nand_probe: phys addr 0xa0200000 
+<6>[    0.491516] msm_nand_probe: Dual Nand Ctrl in ping-pong mode
+<6>[    0.491546] msm_nand_probe: dmac 0x7
+<6>[    0.491577] msm_nand_probe: allocated dma buffer at ffdea000, dma_addr 416ac000
+<3>[    0.491638] flash_onfi_probe: No partition info available
+<6>[    0.491699] status: 20
+<6>[    0.491729] nandid: 7070707 maker 07 device 07
+<3>[    0.491729] ERROR: unknown nand device manuf=7 devid=7
+<6>[    0.491760] SFLASHC Async Mode bit: 1 
+<6>[    0.491790] =================================================================
+<6>[    0.491790] flash_onenand_probe: manufacturer_id = 0xf000
+<6>[    0.491821] flash_onenand_probe: device_id = 0xf001
+<6>[    0.491821] flash_onenand_probe: version_id = 0xf002
+<6>[    0.491851] flash_onenand_probe: data_buf_size = 0xf003
+<6>[    0.491851] flash_onenand_probe: boot_buf_size = 0xf004
+<6>[    0.491851] flash_onenand_probe: num_of_buffers = 0xf005
+<6>[    0.491882] flash_onenand_probe: technology = 0xf006
+<6>[    0.491882] =================================================================
+<6>[    0.491882] flash_onenand_probe: Detected an unsupported device
+<3>[    0.491912] msm_nand_probe: No nand device found
+<4>[    0.492156] spi_qsd spi_qsd.0: msm_spi_probe: DM mode not supported
+<0>[    0.492675] [LCD]lcdc_chimei_spi_probe
+<4>[    0.492767] wm0010(1897):wm0010_spi_probe
+<4>[    0.492950] wm0010(665):setup_config
+<4>[    0.493988] wm0010(450):cleanup_config
+<4>[    0.493988] wm0010(511):cleanup_config()
+<3>[    0.494232] wm0010_wolfson spi0.0: Probe SPI signals
+<6>[    0.494628] PPP generic driver version 2.4.2
+<6>[    0.494781] PPP Deflate Compression module registered
+<6>[    0.494812] PPP BSD Compression module registered
+<6>[    0.495239] PPP MPPE Compression module registered
+<6>[    0.495269] NET: Registered protocol family 24
+<6>[    0.495269] SLIP: version 0.8.4-NET3.019-NEWTTY (dynamic channels, max=256) (6 bit encapsulation enabled).
+<6>[    0.495300] CSLIP: code copyright 1989 Regents of the University of California.
+<6>[    0.495605] tun: Universal TUN/TAP device driver, 1.6
+<6>[    0.495635] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<4>[    0.495910] smc91x: not found (-19).
+<6>[    0.496093] smsc911x: Driver version 2008-10-21
+<6>[    0.496276] rmnet_init: SMD devices[8]
+<6>[    0.499633] rmnet_init: SDIO devices[8]
+<6>[    0.502593] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[    0.502746] host driver registered w/ tranceiver
+<6>[    0.502990] usbcore: registered new interface driver cdc_acm
+<6>[    0.503021] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+<6>[    0.503021] Initializing USB Mass Storage driver...
+<6>[    0.503082] usbcore: registered new interface driver usb-storage
+<6>[    0.503112] USB Mass Storage support registered.
+<6>[    0.503143] usbcore: registered new interface driver ums-alauda
+<6>[    0.503173] usbcore: registered new interface driver ums-cypress
+<6>[    0.503204] usbcore: registered new interface driver ums-datafab
+<6>[    0.503265] usbcore: registered new interface driver ums-freecom
+<6>[    0.503295] usbcore: registered new interface driver ums-isd200
+<6>[    0.503356] usbcore: registered new interface driver ums-jumpshot
+<6>[    0.503387] usbcore: registered new interface driver ums-karma
+<6>[    0.503417] usbcore: registered new interface driver ums-onetouch
+<6>[    0.503479] usbcore: registered new interface driver ums-sddr09
+<6>[    0.503509] usbcore: registered new interface driver ums-sddr55
+<6>[    0.503540] usbcore: registered new interface driver ums-usbat
+<6>[    0.503601] usbcore: registered new interface driver usb_ehset_test
+<6>[    0.503845] peripheral driver registered w/ tranceiver
+<6>[    0.505615] android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[    0.505645] android_usb gadget: Number of LUNs=1
+<6>[    0.505676]  lun0: LUN: removable file: (no medium)
+<6>[    0.506042] android_usb gadget: android_usb ready
+<4>[    0.506164] debugusb_init :*smemprm = 0
+<4>[    0.506164] debugusb_init : boot_pid = 1362
+<6>[    0.507354] diagchar initialized now
+<7>[    0.507476] gpio_set_debounce: gpio-185 status -22
+<7>[    0.507568] gpio_set_debounce: gpio-186 status -22
+<7>[    0.507629] gpio_set_debounce: gpio-189 status -22
+<7>[    0.507690] gpio_set_debounce: gpio-188 status -22
+<7>[    0.507751] gpio_set_debounce: gpio-187 status -22
+<6>[    0.507965] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+<7>[    0.508728] RTC Registering with rs30000048
+<7>[    0.509460] msmrtc_rpc_proc_result: RPC client reply for PROC=12 success
+<6>[    0.509979] RPC CALL -- TOD TIME UPDATE: ttick = 395956
+<6>[    0.509979] stamp=51312867638542336, freq = 0
+<3>[    0.510009] /home/build/p4wk/SWORDFISH/ICS/main/LINUX/android/kernel/drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+<7>[    0.510101] msmrtc_rpc_proc_result: RPC client reply for PROC=17 success
+<7>[    0.510589] msmrtc_tod_proc_result: 01/10/2011 17:22:25 (01)
+<4>[    0.510589] operating_read_time.(rtc_hctosys_ret = -19, err = 0)
+<4>[    0.510589] operating_read_time.(sec_1st = 1294680145)
+<4>[    0.510620] operating_read_time. return OK(1st)
+<4>[    0.511291] rtc_read_time.rtc_nv_read_flg=0
+<4>[    0.512207] rtc_read_time.mminfo_read_flg=1
+<4>[    0.512237] rtc_read_time.(readtime=1294680145,offset=0,RTCset=1)
+<4>[    0.512237] secs+=g_offset.(readtime=1294680145,offset=0,RTCset=1)
+<4>[    0.512268] tm = {00000019 00000016 00000011 0000000a 00000000 0000006f} 
+<4>[    0.512268] __rtc_read_time() return = 0
+<6>[    0.512756] using rtc device, msm_rtc, for alarms
+<7>[    0.512786] msm_rtc: dev (254:0)
+<6>[    0.512817] rs30000048 rs30000048.262144: rtc core: registered msm_rtc as rtc0
+<7>[    0.513275] msmrtc_tod_proc_result: 01/06/1980 00:00:00 (00)
+<4>[    0.513275] operating_read_time.(rtc_hctosys_ret = -19, err = 0)
+<4>[    0.513305] operating_read_time.(sec_1st = 315964800)
+<6>[    0.732604] msm_hsusb msm_hsusb: reset controller
+<6>[    0.962677] msm_hsusb msm_hsusb: reset controller done
+<6>[    0.962707] android_work: did not send uevent (0 0   (null))
+<7>[    1.523864] msmrtc_tod_proc_result: 01/06/1980 00:00:00 (00)
+<4>[    1.523864] operating_read_time.(rtc_hctosys_ret = -19, err = 0)
+<4>[    1.523895] operating_read_time.(sec_2nd = 315964800)
+<7>[    2.534423] msmrtc_tod_proc_result: 01/06/1980 00:00:00 (00)
+<4>[    2.534423] operating_read_time.(rtc_hctosys_ret = -19, err = 0)
+<4>[    2.534423] operating_read_time.(sec_3rd = 315964800)
+<4>[    2.534454] secs+=g_offset.(readtime=315964800,offset=0,RTCset=1)
+<4>[    2.534454] tm = {00000000 00000000 00000000 00000001 00000000 0000006f} 
+<4>[    2.534484] __rtc_read_time() return = 0
+<7>[    2.534637] msm_rtc_secure: dev (254:1)
+<6>[    2.534667] rs30000048 rs30000048.262144: rtc core: registered msm_rtc_secure as rtc1
+<6>[    2.534729] i2c /dev entries driver
+<6>[    2.535339] lirc_dev: IR Remote Control driver registered, major 237 
+<6>[    2.535339] IR NEC protocol handler initialized
+<6>[    2.535369] IR RC5(x) protocol handler initialized
+<6>[    2.535369] IR RC6 protocol handler initialized
+<6>[    2.535369] IR JVC protocol handler initialized
+<6>[    2.535400] IR Sony protocol handler initialized
+<6>[    2.535400] IR RC5 (streamzap) protocol handler initialized
+<6>[    2.535400] IR LIRC bridge handler initialized
+<6>[    2.535430] Linux video capture interface: v2.00
+<6>[    2.536071] ov5640: +ov5640_init()
+<3>[    2.536956] msm_camera_vreg_enable
+<6>[    2.539947] ov5640: +ov5640_i2c_probe()
+<6>[    2.539947] ov5640: +ov5640_init_client()
+<6>[    2.592926] ov5640: ov5640_probe successed! rc = 0
+<3>[    2.592987] --CAMERA-- ov5640_probe_init_gpio
+<3>[    2.593139] --CAMERA-- ov5640_power_off ... (Start...)
+<3>[    2.612884] --CAMERA-- ov5640_power_off ... (End...)
+<3>[    2.642883] --CAMERA-- ov5640_power_on ...ov5640_pwdn_gpio:157 (Start...)
+<3>[    2.642913] --CAMERA-- ov5640_power_on ... (End...)
+<3>[    2.642913] --CAMERA-- ov5640_power_reset ...ov5640_reset_gpio:31 (Start...)
+<3>[    2.762878] --CAMERA-- ov5640_power_reset ... (End...)
+<3>[    2.763366] msm_camera_vreg_disable
+<6>[    2.764801] I2C radio driver for Qualcomm FM Radio Transceiver , Version 1.0.0
+<7>[    2.764984] is3_power_init [20120717-01] : enter
+<6>[    2.765014] __msm_rpc_connect: server not found 30000089:40001
+<6>[    2.765045] __msm_rpc_connect: server not found 30000089:10001
+<6>[    2.765045] __msm_rpc_connect: server not found 30000089:20001
+<7>[    2.767913] msm_batt_enable_filter: enable vbatt filter: OK
+<6>[    2.768035] is3_power_init: Charger/Battery = 0x00040001/0x00050001 (RPC version)
+<3>[    2.768676] [IS3_POWER] Read RCOMP = (0x45,0x0) 
+<3>[    2.768676] [IS3_POWER] battery_max_mode = 4360,ovc_voltage=4400
+<3>[    2.768676] [IS3_POWER] reboot not load_custom_model(4350mv_batt_pack) !!!
+<3>[    2.768768] [IS3_POWER] wait max17040gt_ready ok (0).
+<3>[    2.768768] [IS3_POWER] wait rpc_ready ok (0).
+<3>[    2.872863] [IS3_POWER][DEF] battery_voltage=3663
+<3>[    2.872863] [IS3_POWER][DEF] batt_capacity=2
+<3>[    2.872894] [IS3_POWER][DEF] battery_temp=28,1087
+<3>[    2.872894] [IS3_POWER][DEF] battery_conn=1
+<3>[    2.873107] [IS3_POWER] ovp_sw1_off_gpio = 0,voltage=0
+<3>[    2.873138] [IS3_POWER] ovp_sw2_off_gpio = 0,voltage=0
+<3>[    2.873168] >>>>>> USB connect
+<3>[    2.873199] [IS3_POWER] << smb329b_vbus_draw2 -- call det_work >>
+<3>[    2.873229] [IS3_POWER] smb329b_draw = 500
+<6>[    2.884490] msm_adc successfully registered
+<6>[    2.884521] msm_adc successfully registered
+<5>[    2.884857] pop_mem_tm_probe: device 0 probed successfully
+<5>[    2.884948] pop_mem_tm_probe: device 1 probed successfully
+<6>[    2.885284] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+<6>[    2.885314] Bluetooth: HCI UART driver ver 2.2
+<6>[    2.885345] Bluetooth: HCI H4 protocol initialized
+<6>[    2.885345] Bluetooth: HCI_IBS protocol initialized
+<6>[    2.885345] Bluetooth: MSM Sleep Mode Driver Ver 1.1
+<6>[    2.893676] mmc0: mci-version: 0
+<3>[    2.893859] mmc0: No card detect facilities available
+<6>[    2.895263] mmc0: Qualcomm MSM SDCC-core at 0x00000000a0500000 irq 98,0 dma 8 dmacrcri 7
+<6>[    2.895263] mmc0: 8 bit data mode enabled
+<6>[    2.895263] mmc0: 4 bit data mode disabled
+<6>[    2.895294] mmc0: polling status mode disabled
+<6>[    2.895294] mmc0: MMC clock 144000 -> 49152000 Hz, PCLK 96000000 Hz
+<6>[    2.895324] mmc0: Slot eject status = 0
+<6>[    2.895324] mmc0: Power save feature enable = 1
+<6>[    2.895324] mmc0: DM non-cached buffer at ffdc0000, dma_addr 0x41780000
+<6>[    2.895355] mmc0: DM cmd busaddr 0x41780000, cmdptr busaddr 0x41797f40
+<6>[    2.895874] mmc1: mci-version: 0
+<3>[    2.896087] mmc1: No card detect facilities available
+<6>[    2.896850] mmc1: Qualcomm MSM SDCC-core at 0x00000000a3000000 irq 96,0 dma 8 dmacrcri 12
+<6>[    2.896850] mmc1: 8 bit data mode disabled
+<6>[    2.896881] mmc1: 4 bit data mode enabled
+<6>[    2.896881] mmc1: polling status mode disabled
+<6>[    2.896881] mmc1: MMC clock 144000 -> 49152000 Hz, PCLK 96000000 Hz
+<6>[    2.896911] mmc1: Slot eject status = 0
+<6>[    2.896911] mmc1: Power save feature enable = 1
+<6>[    2.896911] mmc1: DM non-cached buffer at ffd60000, dma_addr 0x417a0000
+<6>[    2.896942] mmc1: DM cmd busaddr 0x417a0000, cmdptr busaddr 0x417b7f40
+<3>[    2.896972] ___ set_polling_tts mmc1
+<3>[    2.896972] msmsdcc_probe: SDIO polling ON(msm_sdcc.3)
+<6>[    2.897521] mmc2: mci-version: 0
+<3>[    2.897644] mmc2: No card detect facilities available
+<6>[    2.898376] mmc2: Qualcomm MSM SDCC-core at 0x00000000a3100000 irq 100,0 dma 8 dmacrcri 13
+<6>[    2.898406] mmc2: 8 bit data mode disabled
+<6>[    2.898406] mmc2: 4 bit data mode enabled
+<6>[    2.898406] mmc2: polling status mode enabled
+<6>[    2.898437] mmc2: MMC clock 144000 -> 49152000 Hz, PCLK 96000000 Hz
+<6>[    2.898437] mmc2: Slot eject status = 0
+<6>[    2.898437] mmc2: Power save feature enable = 1
+<6>[    2.898468] mmc2: DM non-cached buffer at ffd40000, dma_addr 0x417c0000
+<6>[    2.898468] mmc2: DM cmd busaddr 0x417c0000, cmdptr busaddr 0x417d7f40
+<7>[    2.898803] Registered led device: red
+<7>[    2.898895] Registered led device: green
+<7>[    2.898956] Registered led device: blue
+<7>[    2.899017] Registered led device: yellow
+<7>[    2.899078] Registered led device: magenta
+<7>[    2.899139] Registered led device: cyan
+<7>[    2.899200] Registered led device: white
+<3>[    2.899230] leds red: Set (2) led value to (0) Successful
+<3>[    2.899230] leds green: Set (3) led value to (0) Successful
+<3>[    2.899261] leds blue: Set (4) led value to (0) Successful
+<6>[    2.899688] usbcore: registered new interface driver usbhid
+<6>[    2.899719] usbhid: USB HID core driver
+<6>[    2.900085] logger: created 256K log 'log_main'
+<6>[    2.900177] logger: created 256K log 'log_events'
+<6>[    2.900268] logger: created 256K log 'log_radio'
+<6>[    2.900329] logger: created 256K log 'log_system'
+<6>[    2.900360] logger: created 16K log '(null)'
+<6>[    2.900360] logger: created 16K log '(null)'
+<4>[    2.901947] ==ft5x0x_ts_init TS_RESET: 30 ==
+<4>[    2.932922] [FTS] ft5x0x_ts_probe, driver version is 3.0.
+<6>[    3.041595] mmc0: new high speed MMC card at address 0001
+<3>[    3.049499] [IS3_POWER] wake_lock(suspend)
+<3>[    3.049530] [IS3_POWER] set chg(USB-500 mode)
+<6>[    3.049591] mmcblk0: mmc0:0001 M4G1FB 3.64 GiB 
+<6>[    3.049682] mmcblk0boot0: mmc0:0001 M4G1FB partition 1 1.00 MiB
+<6>[    3.049774] mmcblk0boot1: mmc0:0001 M4G1FB partition 2 1.00 MiB
+<6>[    3.052551]  mmcblk0: p1 p2 p3 p4 < p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 >
+<6>[    3.056549]  mmcblk0boot1: unknown partition table
+<6>[    3.058624]  mmcblk0boot0: unknown partition table
+<3>[    3.058807] mmc_rescan: mmcrescan_callnum_tts(1)
+<3>[    3.156036] mmc_rescan: mmc2_polling_time(1)
+<4>[    3.247894] ft5x0x_ts_probe: 1014: client->irq: 270
+<4>[    3.247924] INT irq=270
+<4>[    3.254821]  == ft5x0x_ts_interrupt ==
+<4>[    3.254852]  == ft5x0x_ts_pen_irq_work ==
+<6>[    3.255096] input: ft5x0x_ts as /devices/virtual/input/input1
+<4>[    3.255218] ==register_early_suspend =
+<3>[    3.289367] [IS3_POWER] start_charging_set - ok
+<4>[    3.412994] [FTS] Firmware version = 0x39
+<4>[    3.413146] [FTS] report rate is 60Hz.
+<4>[    3.413269] [FTS] touch threshold is 68.
+<4>[    3.413391] fts_ctpm: 339  uc_tp_fm_ver: 0x39
+<4>[    3.413696]  == AA38: 27277 ==
+<4>[    3.413696] fts_ctpm: 341  uc_host_fm_ver: 0x39
+<4>[    3.413757] [FTS] ==probe over ==
+<4>[    3.413787] ret=0
+<4>[    3.413848] i2c-core: driver [tsl2771] using legacy suspend method
+<4>[    3.413848] i2c-core: driver [tsl2771] using legacy resume method
+<6>[    3.413879] stk-oss: STK PS : I2C Probing
+<6>[    3.414031] input: proximity as /devices/virtual/input/input2
+<6>[    3.414245] input: light as /devices/virtual/input/input3
+<6>[    3.414337] stk-oss: STK PS : register als input device OK
+<4>[    3.414428]  == [ enable_als ] 0 ==
+<4>[    3.432922] stk_ps_probe: 1835: client->irq: 308, gpio:1
+<4>[    3.452911]  == [ enable_als ] 0 ==
+<4>[    3.453369] init_all_setting : [ 0, 0]
+<4>[    3.453826]  == [ enable_ps_int ] 0 ==
+<4>[    3.453826] == enable_ps_int == disable irq
+<4>[    3.454345] === vender_id: aa, color_lens: 38, hwid: 7 ===
+<4>[    3.454376] i2c-core: driver [stk_ps] using legacy suspend method
+<4>[    3.454406] i2c-core: driver [stk_ps] using legacy resume method
+<6>[    3.454772] stk-oss: STK PS Module initialized.
+<6>[    3.455200] input: fj-walkmotion as /devices/virtual/input/input4
+<6>[    3.455413] Initializing compass module, system_rev:0x0
+<6>[    3.455474] === compass: module loaded
+<6>[    3.455474] compass device number: 233.0
+<4>[    3.455627] [ hscd_driver_init ] : 766
+<4>[    3.455657] == DRDY_GPIO: 86
+<7>[    3.458801] compass_probe returned 0
+<6>[    3.458892] MSM_UART_AUX: UART Major No = 232
+<6>[    3.459106] MSM_UART_AUX> msm_uart_aux_probe!
+<6>[    3.459259] MSM_UART_AUX: ioremap() retuns e286e000
+<6>[    3.459320] MSM_UART_AUX:Load normally
+<6>[    3.460723] ftadrv prove 0
+<6>[    3.460754] ftadrv 0 = smd_open()
+<6>[    3.460998] start ftadrv 0
+<7>[    3.461090] ftadrv: packet too short 0
+<7>[    3.461364] ftadrv: packet too short 0
+<6>[    3.461944] msm-cpu-dai msm-cpu-dai.0: asoc_msm_cpu_probe: dev name msm-cpu-dai.0
+<6>[    3.462097] msm-codec-dai msm-codec-dai.0: asoc_msm_codec_probe: dev name msm-codec-dai.0
+<6>[    3.462707] mvs-cpu-dai mvs-cpu-dai.0: asoc_mvs_cpu_probe: dev name mvs-cpu-dai.0
+<6>[    3.463012] mvs-codec-dai mvs-codec-dai.0: asoc_mvs_codec_probe: dev name mvs-codec-dai.0
+<6>[    3.463745] asoc: msm-codec-dai <-> msm-cpu-dai.0 mapping ok
+<6>[    3.463897] asoc: mvs-codec-dai <-> mvs-cpu-dai.0 mapping ok
+<6>[    3.464538] ALSA device list:
+<6>[    3.464538]   #0: msm-audio
+<6>[    3.464630] Mirror/redirect action on
+<6>[    3.464660] u32 classifier
+<6>[    3.464660]     Actions configured
+<6>[    3.464660] Netfilter messages via NETLINK v0.30.
+<6>[    3.464721] nf_conntrack version 0.5.0 (13820 buckets, 55280 max)
+<6>[    3.465057] ctnetlink v0.93: registering with nfnetlink.
+<6>[    3.465087] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[    3.465118] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[    3.465362] xt_time: kernel timezone is -0000
+<6>[    3.465576] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    3.465728] arp_tables: (C) 2002 David S. Miller
+<6>[    3.465789] TCP cubic registered
+<6>[    3.465911] NET: Registered protocol family 10
+<6>[    3.468292] Mobile IPv6
+<6>[    3.468322] ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    3.468444] IPv6 over IPv4 tunneling driver
+<6>[    3.469451] NET: Registered protocol family 17
+<6>[    3.469482] NET: Registered protocol family 15
+<3>[    3.469512] blueHC hci_register_cb: c095d8b8 name RFCOMM
+<6>[    3.469635] Bluetooth: RFCOMM TTY layer initialized
+<6>[    3.469665] Bluetooth: RFCOMM socket layer initialized
+<6>[    3.469665] Bluetooth: RFCOMM ver 1.11
+<6>[    3.469665] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>[    3.469696] Bluetooth: BNEP filters: protocol multicast
+<6>[    3.469696] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<6>[    3.469787] VFP support v0.3: implementor 51 architecture 64 part 0f variant 1 rev 0
+<4>[    3.471679] ------------[ cut here ]------------
+<4>[    3.471710] WARNING: at /home/build/p4wk/SWORDFISH/ICS/main/LINUX/android/kernel/arch/arm/mach-msm/clock-local.c:392 __branch_clk_disable_reg+0xe0/0xf8()
+<4>[    3.471740] mdc_clk status stuck at 'on'
+<4>[    3.471740] Modules linked in:
+<4>[    3.471771] [<c004cf3c>] (unwind_backtrace+0x0/0x12c) from [<c00ebcf8>] (warn_slowpath_common+0x68/0x88)
+<4>[    3.471801] [<c00ebcf8>] (warn_slowpath_common+0x68/0x88) from [<c00ebd98>] (warn_slowpath_fmt+0x2c/0x3c)
+<4>[    3.471832] [<c00ebd98>] (warn_slowpath_fmt+0x2c/0x3c) from [<c00de610>] (__branch_clk_disable_reg+0xe0/0xf8)
+<4>[    3.471832] [<c00de610>] (__branch_clk_disable_reg+0xe0/0xf8) from [<c00de710>] (__rcg_clk_disable_reg+0x14/0x68)
+<4>[    3.471862] [<c00de710>] (__rcg_clk_disable_reg+0x14/0x68) from [<c00de794>] (rcg_clk_disable+0x30/0x68)
+<4>[    3.471893] [<c00de794>] (rcg_clk_disable+0x30/0x68) from [<c000f0a8>] (clock_late_init+0x8c/0x124)
+<4>[    3.471923] [<c000f0a8>] (clock_late_init+0x8c/0x124) from [<c0041400>] (do_one_initcall+0xac/0x18c)
+<4>[    3.471954] [<c0041400>] (do_one_initcall+0xac/0x18c) from [<c0008374>] (kernel_init+0x74/0x124)
+<4>[    3.471984] [<c0008374>] (kernel_init+0x74/0x124) from [<c00481ec>] (kernel_thread_exit+0x0/0x8)
+<4>[    3.471984] ---[ end trace 1b75b31a2719ed1d ]---
+<3>[    3.472961] blue rfcomm_run: 
+<3>[    3.472961] blue rfcomm_l2sock_create: 
+<3>[    3.472991] blue l2cap_sock_create: sock e1854a20
+<3>[    3.473022] blue l2cap_sock_init: sk e1099c00 parent   (null)
+<3>[    3.473022] blue l2cap_sock_init: _sec__  BT_SECURITY_LOW
+<3>[    3.473022] blue l2cap_sock_bind: sk e1099c00
+<3>[    3.473052] blue l2cap_sock_bind: _sec__ BT_SECURITY_SDP
+<3>[    3.473052] blue l2cap_sock_listen: sk e1099c00 backlog 10
+<3>[    3.473083] blue rfcomm_session_add: session e106b620 sock e1854a20
+<6>[    3.474182] clock_late_init() disabled 76 unused clocks
+<6>[    3.474670] [voice.c:voice_init] 
+<6>[    3.476043] [audio_acdb.c:acdb_init] build id used is = 7X30A-AABBQMLYM-4040
+<6>[    3.476562] input: 7k_handset as /devices/virtual/input/input5
+<6>[    3.476806] [voice.c:voice_thread] voice_thread() start
+<4>[    3.481719] ## wifi_probe
+<4>[    3.481719] wifi_set_power = 1
+<3>[    3.481719] wlan_power S
+<6>[    3.481903] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=138, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.481994] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=139, func=0x01, dir=0x00, pull=0x01, drvstr=0x00 => 0
+<6>[    3.482086] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=140, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.482177] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=141, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.482269] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=147, func=0x00, dir=0x00, pull=0x03, drvstr=0x00 => 0
+<6>[    3.482391] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=150, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.482482] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=41, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.482574] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=43, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.482666] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=149, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.482757] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=39, func=0x00, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.482849] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=49, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<6>[    3.483306] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=50, func=0x01, dir=0x00, pull=0x00, drvstr=0x00 => 0
+<6>[    3.483398] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=51, func=0x01, dir=0x00, pull=0x00, drvstr=0x00 => 0
+<6>[    3.483489] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=52, func=0x01, dir=0x01, pull=0x00, drvstr=0x00 => 0
+<3>[    3.483520] wlan_power set_power_wlan_bt(1,1) CALL
+<3>[    3.483520] set_power_wlan_bt S
+<3>[    3.483520] BT/WLAN-ON 
+<6>[    3.483551] bcm43xx_gpio_set_value(): gpio_set_value(149) : 0 -> 1
+<6>[    3.502899] bcm43xx_gpio_set_value(): gpio_set_value(150) : 1 -> 1
+<6>[    3.502929] bcm43xx_gpio_set_value(): gpio_set_value(43) : 0 -> 1
+<3>[    3.502929] set_power_wlan_bt S
+<3>[    3.502929] wlan_power set_power_wlan_bt(1,1) CALL E
+<6>[    3.502960] bcm43xx_gpio_set_value(): gpio_set_value(39) : 0 -> 1
+<4>[    3.672882] wifi_set_carddetect = 1
+<4>[    3.673034] 
+<4>[    3.673034] Dongle Host Driver, version 5.90.125.129
+<3>[    4.152923] mmc_rescan: mmcrescan_callnum_tts(2)
+<4>[    4.220336] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+<4>[    4.224151] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+<4>[    4.227905] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+<4>[    4.234680] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+<4>[    4.245239] mmc1: queuing unknown CIS tuple 0x80 (12 bytes)
+<6>[    4.341369] mmc1: new high speed SDIO card at address 0001
+<4>[    4.344329] DHD: dongle ram size is set to 294912(orig 294912)
+<4>[    4.346191] read_macaddr: msm_proc_comm err ret=-5
+<6>[    4.346221] read_macaddr -> read NV mac = 00:00:00:00:00:00, data=3775517696
+<4>[    4.346801] Broadcom Dongle Host Driver: register interface [wlan0] MAC: 00:90:4c:11:22:33
+<4>[    4.346832] dhd_module_init: wait start
+<3>[    4.349884] mmc_rescan: mmc2_polling_time(2)
+<3>[    5.342895] mmc_rescan: SDIO polling OFF(mmc1)
+<4>[    5.342926] dhd_module_init: wait end
+<4>[    5.342956] wifi_set_power = 0
+<3>[    5.342956] wlan_power S
+<6>[    5.343078] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=138, func=0x01, dir=0x01, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343170] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=139, func=0x01, dir=0x00, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343292] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=140, func=0x01, dir=0x01, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343383] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=141, func=0x01, dir=0x01, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343475] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=147, func=0x00, dir=0x00, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343566] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=150, func=0x00, dir=0x01, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343658] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=41, func=0x00, dir=0x01, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343780] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=43, func=0x00, dir=0x01, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343872] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=149, func=0x00, dir=0x01, pull=0x01, drvstr=0x00 => 0
+<6>[    5.343963] bcm43xx_gpio_tlmm_config: calling gpio_tlmm_config(): gpio=39, func=0x00, dir=0x01, pull=0x01, drvstr=0x00 => 0
+<3>[    5.343994] wlan_power wlan_set_carddetect CALL
+<3>[    5.343994] wlan_power wlan_set_carddetect CALL E
+<3>[    5.442871] mmc_rescan: SDIO polling OFF(mmc2)
+<6>[    5.486907] bcm43xx_gpio_set_value(): gpio_set_value(39) : 1 -> 0
+<3>[    5.602905] wlan_power set_power_wlan_bt(0,1) CALL
+<3>[    5.602935] set_power_wlan_bt S
+<3>[    5.602935] BT/WLAN-OFF 
+<6>[    5.602935] bcm43xx_gpio_set_value(): gpio_set_value(43) : 1 -> 0
+<6>[    5.602966] bcm43xx_gpio_set_value(): gpio_set_value(150) : 1 -> 0
+<6>[    5.602966] bcm43xx_gpio_set_value(): gpio_set_value(149) : 1 -> 0
+<3>[    5.622894] set_power_wlan_bt S
+<3>[    5.622894] wlan_power set_power_wlan_bt(0,1) CALL
+<4>[    5.622924] =========== WLAN placed in RESET ========
+<7>[    5.624145] msmrtc_tod_proc_result: 01/10/2011 17:22:30 (01)
+<4>[    5.624145] operating_read_time.(rtc_hctosys_ret = -19, err = 0)
+<4>[    5.624176] operating_read_time.(sec_1st = 1294680150)
+<4>[    5.624176] operating_read_time. return OK(1st)
+<4>[    5.624176] rtc_read_time.(readtime=1294680150,offset=0,RTCset=1)
+<4>[    5.624206] secs+=g_offset.(readtime=1294680150,offset=0,RTCset=1)
+<4>[    5.624206] tm = {0000001e 00000016 00000011 0000000a 00000000 0000006f} 
+<4>[    5.624237] __rtc_read_time() return = 0
+<6>[    5.624237] rs30000048 rs30000048.262144: setting system clock to 2011-01-10 17:22:30 UTC (1294680150)
+<4>[    5.624542] Warning: unable to open an initial console.
+<6>[    5.624877] Freeing init memory: 228K
+<3>[    5.628204] init: /init.F11D.rc: 454: invalid command '/system/bin/log'
+<3>[    5.628417] init: /init.F11D.rc: 563: ignored duplicate definition of service 'wil-daemon'
+<4>[    5.628784] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+<3>[    5.730957] init: [Offline-Charging] status off 
+<6>[    5.802642] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: barrier=1
+<6>[    5.864379] EXT4-fs (mmcblk0p14): mounted filesystem with ordered data mode. Opts: auto_da_alloc
+<6>[    5.872192] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: barrier=1
+<6>[    5.882537] EXT4-fs (mmcblk0p16): mounted filesystem with ordered data mode. Opts: barrier=1
+<3>[    5.883331] EXT4-fs (mmcblk0p17): VFS: Can't find ext4 filesystem
+<6>[    6.133270] EXT4-fs (mmcblk0p18): mounted filesystem with ordered data mode. Opts: barrier=1
+<6>[    6.138397] EXT4-fs (mmcblk0p19): mounted filesystem with ordered data mode. Opts: barrier=1
+<6>[    6.368133] EXT4-fs (mmcblk0p20): mounted filesystem with ordered data mode. Opts: barrier=1
+<6>[    6.371917] EXT4-fs (mmcblk0p13): re-mounted. Opts: barrier=1
+<3>[    6.458831] init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<6>[    6.568695] write e129a00c 77
+<6>[    6.568786] write e113be60 9
+<6>[    6.568817] wait_comp(smd)
+<7>[    6.569061] ftadrv: packet too short 0
+<6>[    6.569641] smd_cmd 10 0 22
+<7>[    6.569671] ftadrv: packet too short 0
+<6>[    6.569946] smd_cmd 10 0 23
+<7>[    6.569946] ftadrv: packet too short 0
+<6>[    6.570404] smd_cmd 99 0 4
+<6>[    6.570404] complete(smd)
+<7>[    6.570404] ftadrv: packet too short 0
+<6>[    6.570434] write e113be60 9
+<6>[    6.570434] no log
+<7>[    6.570617] ftadrv: packet too short 0
+<6>[    6.732696] warning: `rild' uses 32-bit capabilities (legacy support in use)
+<6>[    7.209747] enable_store: enabled=0
+<3>[    7.209747] android_usb: already disabled
+<3>[    7.209808] init: property (null) has no value for writing to /sys/class/android_usb/android0/iSerial
+<6>[    7.210021] functions_store: buf=mtp
+<6>[    7.210083] enable_store: enabled=1
+<6>[    7.210083] mtp_bind_config
+<6>[    7.210144] android_bind_enabled_functions: gserial_port[0]
+<6>[    7.210174] debugusb_set_pid_to_nv : pid=135e nv_ope=0
+<3>[    7.229431] msm_i2c msm_i2c.0: (00a8) Error during data xfer (-5)
+<6>[    7.389984] debugusb_get_boot_pid : 1362
+<3>[    7.460662] init: cannot find '/system/bin/quipc_igsn', disabling 'quipc_igsn'
+<3>[    7.505432] init: cannot find '/system/bin/quipc_main', disabling 'quipc_main'
+<6>[    7.570892] write e130b500 9
+<6>[    7.570922] wait_comp(smd)
+<7>[    7.571136] ftadrv: packet too short 0
+<6>[    7.571807] smd_cmd 99 0 4
+<6>[    7.571807] complete(smd)
+<7>[    7.571838] ftadrv: packet too short 0
+<6>[    7.571838] write e130b500 9
+<6>[    7.571868] no log
+<7>[    7.572143] ftadrv: packet too short 0
+<3>[    8.203674] [USB] usb_get_chg_type(PORTSC_LS) = 0xc00
+<3>[    8.203704] [IS3_POWER] << smb329b_vbus_draw2 -- call det_work2(AC) >>
+<3>[    8.203704] [USB] qci_offline_charging_status()=0
+<6>[    8.203735] 
+<6>[    8.203735] Charger Type: DEDICATED CHARGER
+<3>[    8.203765] [IS3_POWER] << smb329b_vbus_draw2 -- call det_work >>
+<3>[    8.204071] [IS3_POWER] smb329b_draw = 1000
+<4>[    8.254302] == PROX oncall: 0 ==
+<6>[    8.295593] msm_release_control: control0
+<6>[    8.295623] __msm_release, open count =0
+<6>[    8.295623] __msm_release, release VFE
+<6>[    8.301666] [voice.c:voice_req_rx_mute] voice_req_rx_mute 0
+<6>[    8.393707] msm_otg_suspend: usb in low power mode
+<3>[    8.438110] [IS3_POWER] set chg(AC mode)
+<3>[    8.796478] [IS3_POWER] start_charging_set - ok
+<6>[   18.818664] [PM8058] CRADLE_STATE pin = 20 mV
+<6>[   18.818695] [PM8058] USB_VBUS_STATE pin = 1418 mV
+<6>[   18.818695] Battery level = 3
+<6>[   18.818847] smb329b_reg00h = 0xfb
+<6>[   18.819000] smb329b_reg02h = 0x5a
+<6>[   18.819183] smb329b_reg36h = 0x5
+<7>[   23.213623] [LCD]: BrightnessLevel = 0
+<7>[   23.273620] [LCD]: BrightnessLevel = 0
+<6>[   23.273925] request_suspend_state: wakeup (3->0) at 23280353328 (2011-01-10 17:22:48.131756276 UTC)
+<7>[   23.343750] [LCD]: BrightnessLevel = 15
+<4>[   23.645904] led_notify_store state:0x0 notify:0x0 charge:0x0
+<6>[   23.766784] acc_open
+<6>[   23.766845] acc_release
+<4>[   24.740112] [VIB] vibrator On(time[1])
+<4>[   24.740142] timed_vibrator_on on
+<4>[   24.741882] set_pmic_vibrator flag_off
+<4>[   24.750518] [VIB] vibrator_timer_func call
+<4>[   24.750549] timed_vibrator_off on
+<4>[   24.752990] set_pmic_vibrator flag_off
+<4>[   24.761444] [VIB] vibrator On(time[21])
+<4>[   24.761474] timed_vibrator_on on
+<4>[   24.762512] set_pmic_vibrator flag_off
+<4>[   24.782562] [VIB] vibrator_timer_func call
+<4>[   24.782592] timed_vibrator_off on
+<4>[   24.783752] set_pmic_vibrator flag_off
+<6>[   30.253540] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[   30.256896] hex: 30303636
+<4>[   30.256927] result: 66
+<4>[   30.277526] hex: 30303733
+<4>[   30.277557] result: 73
+<4>[   30.279479] hex: 30303030
+<4>[   30.279479] result: 0
+<4>[   30.279510] [ proximity ] led_setting: 0
+<4>[   30.279510] prox_h: 73, prox_l: 66
+<4>[   30.282745]  +hwid: 7 
+<4>[   30.282745] hex: 30323638
+<4>[   30.282745] result: 268
+<4>[   30.352844] hex: 30393038
+<4>[   30.352844] result: 908
+<4>[   30.388092] hex: 31323839
+<4>[   30.388122] result: 1289
+<4>[   30.397705]  == [ enable_als ] 1 ==
+<6>[   32.796813] [Thermistor] temp_msm = 31,1308, overheat_layer = 0
+<6>[   32.797637] [Thermistor] temp_pa = 28,1367
+<6>[   34.179626] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[   34.179901]  == [ enable_ps_int ] 1 ==
+<4>[   34.233886] == enable_ps_int == enable irq
+<6>[   35.331970] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[   35.332244]  == [ enable_ps_int ] 0 ==
+<4>[   35.332244] == enable_ps_int == disable irq
+<4>[   35.352722] led_notify_store state:0x10000 notify:0x0 charge:0x1
+<4>[   35.360168] pmic8058_led_work  led_notify:0x0
+<3>[   35.360198] leds red: Set (2) led value to (1) Successful
+<3>[   35.360229] leds green: Set (3) led value to (0) Successful
+<3>[   35.360260] leds blue: Set (4) led value to (0) Successful
+<4>[   35.361053] pmic8058_led_work  led_notify:0x0
+<3>[   35.361083] leds red: Set (2) led value to (1) Successful
+<3>[   35.361114] leds green: Set (3) led value to (0) Successful
+<3>[   35.361145] leds blue: Set (4) led value to (0) Successful
+<4>[   35.361145] pmic8058_led_work  led_notify:0x0
+<3>[   35.361145] leds red: Set (2) led value to (1) Successful
+<3>[   35.361175] leds green: Set (3) led value to (0) Successful
+<3>[   35.361206] leds blue: Set (4) led value to (0) Successful
+<4>[   35.361206] pmic8058_led_work  led_notify:0x0
+<3>[   35.361236] leds red: Set (2) led value to (1) Successful
+<3>[   35.361236] leds green: Set (3) led value to (0) Successful
+<3>[   35.361267] leds blue: Set (4) led value to (0) Successful
+<4>[   35.459564] led_notify_store state:0x10000 notify:0x0 charge:0x1
+<4>[   35.461120] pmic8058_led_work  led_notify:0x0
+<3>[   35.461151] leds red: Set (2) led value to (1) Successful
+<3>[   35.461151] leds green: Set (3) led value to (0) Successful
+<3>[   35.461181] leds blue: Set (4) led value to (0) Successful
+<4>[   35.461212] pmic8058_led_work  led_notify:0x0
+<3>[   35.461212] leds red: Set (2) led value to (1) Successful
+<3>[   35.461242] leds green: Set (3) led value to (0) Successful
+<3>[   35.461273] leds blue: Set (4) led value to (0) Successful
+<4>[   35.461395] pmic8058_led_work  led_notify:0x0
+<3>[   35.461425] leds red: Set (2) led value to (1) Successful
+<3>[   35.461456] leds green: Set (3) led value to (0) Successful
+<3>[   35.461456] leds blue: Set (4) led value to (0) Successful
+<4>[   35.461486] pmic8058_led_work  led_notify:0x0
+<3>[   35.461517] leds red: Set (2) led value to (1) Successful
+<3>[   35.461517] leds green: Set (3) led value to (0) Successful
+<3>[   35.461547] leds blue: Set (4) led value to (0) Successful
+<3>[   35.461669] leds red: Set (2) led value to (1) Successful
+<3>[   35.461700] leds green: Set (3) led value to (0) Successful
+<3>[   35.461730] leds blue: Set (4) led value to (0) Successful
+<3>[   35.461761] leds red: Set (2) led value to (1) Successful
+<3>[   35.461761] leds green: Set (3) led value to (0) Successful
+<3>[   35.461791] leds blue: Set (4) led value to (0) Successful
+<3>[   35.461914] leds red: Set (2) led value to (1) Successful
+<3>[   35.461914] leds green: Set (3) led value to (0) Successful
+<3>[   35.461944] leds blue: Set (4) led value to (0) Successful
+<3>[   35.461975] leds red: Set (2) led value to (1) Successful
+<3>[   35.462005] leds green: Set (3) led value to (0) Successful
+<3>[   35.462005] leds blue: Set (4) led value to (0) Successful
+<3>[   35.463684] leds red: Set (2) led value to (0) Successful
+<3>[   35.463714] leds green: Set (3) led value to (0) Successful
+<3>[   35.463745] leds blue: Set (4) led value to (0) Successful
+<4>[   35.513641] pmic8058_led_work  led_notify:0x0
+<3>[   35.513671] leds red: Set (2) led value to (1) Successful
+<3>[   35.513702] leds green: Set (3) led value to (0) Successful
+<3>[   35.513702] leds blue: Set (4) led value to (0) Successful
+<4>[   36.143005] led_notify_store state:0x10000 notify:0x0 charge:0x1
+<7>[   36.863647] [LCD]: BrightnessLevel = 8
+<6>[   36.951141] [msm7x30.c:msm_device_put] device speaker_stereo_rx set 1
+<3>[   36.951171] [msm7x30.c:msm_device_put] device freq =48000
+<6>[   36.951202] __msm_rpc_connect: server not found 30000060:70001
+<3>[   36.951202] pmapp_rpc_req_reply: init rpc failed! ans = -113 for 0x70001 version, fallback
+<6>[   36.951202] __msm_rpc_connect: server not found 30000060:60001
+<3>[   36.951232] pmapp_rpc_req_reply: init rpc failed! ans = -113 for 0x60001 version, fallback
+<7>[   36.951232] pmapp_rpc_req_reply: successfully connected to 0x50001 rpc version
+<6>[   36.983947] [adsp.c:msm_adsp_get] module AFETASK has been registered
+<6>[   36.983978] [adsp.c:msm_adsp_enable] enable 'AFETASK'state[0] id[17227119]
+<6>[   36.989807] [adsp.c:adsp_rtos_mtoa_cb] rpc event=0, proc_id=2, module=17227119, image=0
+<6>[   36.989837] [adsp.c:adsp_rtos_mtoa_cb] module AFETASK: READY
+<6>[   37.007537] msm_snddev_poweramp_on: power on amplifier
+<3>[   37.007598] [audio_acdb.c:check_device_change] not pointing to previous valid device detail
+<6>[   37.007690] [adsp.c:msm_adsp_get] module AUDPPTASK has been registered
+<6>[   37.007690] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+<6>[   37.009857] [adsp.c:adsp_rtos_mtoa_cb] rpc event=0, proc_id=2, module=17227122, image=0
+<6>[   37.009887] [adsp.c:adsp_rtos_mtoa_cb] module AUDPPTASK: READY
+<6>[   37.014007] [audpp.c:audpp_dsp_event] ENABLE
+<6>[   37.018341] [adsp.c:msm_adsp_write] AUDPPTASK command took 47 attempts: rc 0
+<4>[   37.906860] pmic8058_led_work  led_notify:0x0
+<3>[   37.906890] leds red: Set (2) led value to (1) Successful
+<3>[   37.906921] leds green: Set (3) led value to (0) Successful
+<3>[   37.906921] leds blue: Set (4) led value to (0) Successful
+<4>[   37.906951] pmic8058_led_work  led_notify:0x0
+<3>[   37.906951] leds red: Set (2) led value to (1) Successful
+<3>[   37.906982] leds green: Set (3) led value to (0) Successful
+<3>[   37.907012] leds blue: Set (4) led value to (0) Successful
+<4>[   37.907104] pmic8058_led_work  led_notify:0x0
+<3>[   37.907135] leds red: Set (2) led value to (1) Successful
+<3>[   37.907165] leds green: Set (3) led value to (0) Successful
+<3>[   37.907165] leds blue: Set (4) led value to (0) Successful
+<4>[   37.907196] pmic8058_led_work  led_notify:0x0
+<3>[   37.907196] leds red: Set (2) led value to (1) Successful
+<3>[   37.907226] leds green: Set (3) led value to (0) Successful
+<3>[   37.907226] leds blue: Set (4) led value to (0) Successful
+<4>[   37.907318] pmic8058_led_work  led_notify:0x0
+<3>[   37.907348] leds red: Set (2) led value to (1) Successful
+<3>[   37.907379] leds green: Set (3) led value to (0) Successful
+<3>[   37.907379] leds blue: Set (4) led value to (0) Successful
+<4>[   37.907409] pmic8058_led_work  led_notify:0x0
+<3>[   37.907409] leds red: Set (2) led value to (1) Successful
+<3>[   37.907440] leds green: Set (3) led value to (0) Successful
+<3>[   37.907440] leds blue: Set (4) led value to (0) Successful
+<4>[   38.004089] led_notify_store state:0x10000 notify:0x0 charge:0x1
+<4>[   38.076690] pmic8058_led_work  led_notify:0x0
+<3>[   38.076751] leds red: Set (2) led value to (1) Successful
+<3>[   38.076751] leds green: Set (3) led value to (0) Successful
+<3>[   38.076782] leds blue: Set (4) led value to (0) Successful
+<4>[   38.076782] pmic8058_led_work  led_notify:0x0
+<3>[   38.076812] leds red: Set (2) led value to (1) Successful
+<3>[   38.076843] leds green: Set (3) led value to (0) Successful
+<3>[   38.076843] leds blue: Set (4) led value to (0) Successful
+<3>[   38.076873] leds red: Set (2) led value to (1) Successful
+<3>[   38.076873] leds green: Set (3) led value to (0) Successful
+<3>[   38.076904] leds blue: Set (4) led value to (0) Successful
+<3>[   38.084075] leds red: Set (2) led value to (0) Successful
+<3>[   38.084136] leds green: Set (3) led value to (0) Successful
+<3>[   38.084136] leds blue: Set (4) led value to (0) Successful
+<4>[   38.133666] pmic8058_led_work  led_notify:0x0
+<3>[   38.133697] leds red: Set (2) led value to (1) Successful
+<3>[   38.133728] leds green: Set (3) led value to (0) Successful
+<3>[   38.133728] leds blue: Set (4) led value to (0) Successful
+<6>[   38.818359] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[   38.819396]  == [ enable_ps_int ] 1 ==
+<4>[   38.873687] == enable_ps_int == enable irq
+<6>[   39.962158] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[   39.963287]  == [ enable_ps_int ] 0 ==
+<4>[   39.963317] == enable_ps_int == disable irq
+<7>[   40.863769] [LCD]: BrightnessLevel = 5
+<6>[   42.168365] [msm7x30.c:msm_device_put] device speaker_stereo_rx set 0
+<6>[   42.170196] msm_snddev_poweramp_off: power off amplifier
+<6>[   42.178161] [adsp.c:msm_adsp_put] closing module AFETASK
+<6>[   42.178710] [msm7x30.c:msm_device_put] device speaker_mono_tx set 0
+<6>[   42.178802] [audpp.c:audpp_dsp_event] DISABLE
+<6>[   42.178863] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+<6>[   42.178863] [adsp.c:msm_adsp_disable] disable interrupt
+<6>[   42.178894] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+<6>[   43.024810] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[   43.025482]  == [ enable_ps_int ] 1 ==
+<4>[   43.083679] == enable_ps_int == enable irq
+<7>[   43.363677] [LCD]: BrightnessLevel = 1
+<6>[   44.143005] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[   44.143280]  == [ enable_ps_int ] 0 ==
+<4>[   44.143310] == enable_ps_int == disable irq
+<4>[   44.967926]  == ft5x0x_ts_interrupt ==
+<4>[   44.968658]  == ft5x0x_ts_pen_irq_work ==
+<4>[   44.985809]  == ft5x0x_ts_interrupt ==
+<4>[   44.985839]  == ft5x0x_ts_pen_irq_work ==
+<4>[   44.986785] ft5x0x_report_value: [ x , y ][4] = [ 230 , 570 ][ev 2][0]
+<4>[   45.002685]  == ft5x0x_ts_interrupt ==
+<4>[   45.002716]  == ft5x0x_ts_pen_irq_work ==
+<4>[   45.003662] ft5x0x_report_value: [ x , y ][3] = [ 230 , 570 ][ev 2][0]
+<4>[   45.019470] [VIB] vibrator On(time[30])
+<4>[   45.019470] timed_vibrator_on on
+<4>[   45.020385]  == ft5x0x_ts_interrupt ==
+<4>[   45.021301]  == ft5x0x_ts_pen_irq_work ==
+<4>[   45.022094] set_pmic_vibrator flag_off
+<4>[   45.023681] ft5x0x_report_value: [ x , y ][2] = [ 230 , 570 ][ev 2][0]
+<4>[   45.037292]  == ft5x0x_ts_interrupt ==
+<4>[   45.037353]  == ft5x0x_ts_pen_irq_work ==
+<4>[   45.038238] ft5x0x_report_value: [ x , y ][1] = [ 230 , 570 ][ev 2][0]
+<4>[   45.050048] [VIB] vibrator_timer_func call
+<4>[   45.050079] timed_vibrator_off on
+<4>[   45.051696] set_pmic_vibrator flag_off
+<4>[   45.218597] [VIB] vibrator On(time[40])
+<4>[   45.218597] timed_vibrator_on on
+<4>[   45.221740] set_pmic_vibrator flag_off
+<4>[   45.259796] [VIB] vibrator Off(time[0])
+<4>[   45.259826] timed_vibrator_off on
+<4>[   45.264831] set_pmic_vibrator flag_off
+<4>[   45.320159] Set gammatable for default. table=-1
+<7>[   46.873657] [LCD]: BrightnessLevel = 5
+<6>[   47.245147] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[   47.245422]  == [ enable_ps_int ] 1 ==
+<4>[   47.303649] == enable_ps_int == enable irq
+<6>[   48.409423] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[   48.409698]  == [ enable_ps_int ] 0 ==
+<4>[   48.409698] == enable_ps_int == disable irq
+<6>[   52.084106] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[   52.084350]  == [ enable_ps_int ] 1 ==
+<4>[   52.143646] == enable_ps_int == enable irq
+<7>[   52.913635] [LCD]: BrightnessLevel = 0
+<7>[   52.973663] [LCD]: BrightnessLevel = 0
+<6>[   52.973937] request_suspend_state: sleep (0->3) at 52980365534 (2011-01-10 17:23:17.831768482 UTC)
+<0>[   52.974639] LCD--chimei_suspend
+<7>[   53.032165] msm_batt_early_suspend: 
+<3>[   53.032165] 2011-01-10 17:23:17.889996023
+<4>[   53.032196]  == ft5x0x_ts_suspend == irq_num: 0 
+<4>[   53.032867] ==ft5x0x_ts_suspend disable VDD=
+<0>[   53.063690] [LCD]lcdc_chimei_panel_off
+<0>[   53.063720] [LCD]lcdc_chimei_panel_power
+<6>[   53.093780] active wake lock PowerManagerService
+<6>[   53.093811] active wake lock sensors_server
+<6>[   53.093811] active wake lock charging_active
+<6>[   53.093841] PM: Syncing filesystems...
+<6>[   53.224578] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[   53.225006]  == [ enable_ps_int ] 0 ==
+<4>[   53.225006] == enable_ps_int == disable irq
+<6>[   53.256805] sync done.
+<6>[   56.281036] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[   56.281311]  == [ enable_ps_int ] 1 ==
+<4>[   56.333648] == enable_ps_int == enable irq
+<6>[   57.362060] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[   57.362335]  == [ enable_ps_int ] 0 ==
+<4>[   57.362335] == enable_ps_int == disable irq
+<3>[   58.906219] [IS3_POWER][update_RCOMP] temp=29, NewRCOMP=0x45
+<6>[   58.906372] Battery temp = 29,1083
+<6>[   58.906555] smb329b_reg00h = 0xfb
+<6>[   58.906707] smb329b_reg02h = 0x5a
+<6>[   58.906860] smb329b_reg36h = 0x5
+<6>[   60.406860] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[   60.407135]  == [ enable_ps_int ] 1 ==
+<4>[   60.464050] == enable_ps_int == enable irq
+<6>[   61.514068] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[   61.514617]  == [ enable_ps_int ] 0 ==
+<4>[   61.514617] == enable_ps_int == disable irq
+<6>[   62.876556] [Thermistor] temp_msm = 32,1282, overheat_layer = 0
+<6>[   62.878204] [Thermistor] temp_pa = 29,1359
+<6>[   68.929412] Battery level = 4
+<6>[   68.929718] smb329b_reg00h = 0xfb
+<6>[   68.929962] smb329b_reg02h = 0x5a
+<6>[   68.930206] smb329b_reg36h = 0x5
+<6>[  109.018920] Battery level = 5
+<6>[  109.019226] smb329b_reg00h = 0xfb
+<6>[  109.019470] smb329b_reg02h = 0x5a
+<6>[  109.019714] smb329b_reg36h = 0x5
+<6>[  123.038238] [Thermistor] temp_msm = 30,1314, overheat_layer = 0
+<3>[  129.059417] [IS3_POWER][update_RCOMP] temp=30, NewRCOMP=0x44
+<6>[  129.059722] Battery temp = 30,1068
+<6>[  129.059997] smb329b_reg00h = 0xfb
+<6>[  129.060241] smb329b_reg02h = 0x5a
+<6>[  129.060485] smb329b_reg36h = 0x5
+<6>[  159.119445] Battery level = 6
+<6>[  159.119720] smb329b_reg00h = 0xfb
+<6>[  159.119995] smb329b_reg02h = 0x5a
+<6>[  159.120239] smb329b_reg36h = 0x5
+<6>[  164.802459] rmt_storage_event_open_cb: open callback received
+<6>[  164.802551] open partition /boot/modem_fs1 handle=1
+<6>[  164.803283] rmt_storage_event_user_data_cb: send user data callback received
+<6>[  164.804382] rmt_storage_event_open_cb: open callback received
+<6>[  164.804473] open partition /boot/modem_fs2 handle=2
+<6>[  164.805175] rmt_storage_event_user_data_cb: send user data callback received
+<6>[  164.806243] rmt_storage_event_write_iovec_cb: write iovec callback received
+<6>[  165.626525] rmt_storage_ioctl: send status ioctl
+<6>[  209.219848] Battery level = 7
+<6>[  209.220123] smb329b_reg00h = 0xfb
+<6>[  209.220397] smb329b_reg02h = 0x5a
+<6>[  209.220642] smb329b_reg36h = 0x5
+<6>[  269.338867] Battery level = 8
+<6>[  269.339141] smb329b_reg00h = 0xfb
+<6>[  269.339385] smb329b_reg02h = 0x5a
+<6>[  269.339660] smb329b_reg36h = 0x5
+<6>[  319.441711] Battery level = 9
+<6>[  319.441986] smb329b_reg00h = 0xfb
+<6>[  319.442260] smb329b_reg02h = 0x5a
+<6>[  319.442504] smb329b_reg36h = 0x5
+<6>[  409.619567] Battery level = 10
+<6>[  409.619873] smb329b_reg00h = 0xfb
+<6>[  409.620117] smb329b_reg02h = 0x5a
+<6>[  409.620391] smb329b_reg36h = 0x5
+<6>[  424.140350] [Thermistor] temp_msm = 31,1312, overheat_layer = 0
+<6>[  479.758941] Battery level = 11
+<6>[  479.759246] smb329b_reg00h = 0xfb
+<6>[  479.759490] smb329b_reg02h = 0x5a
+<6>[  479.759765] smb329b_reg36h = 0x5
+<6>[  549.899505] Battery level = 12
+<6>[  549.899810] smb329b_reg00h = 0xfb
+<6>[  549.900054] smb329b_reg02h = 0x5a
+<6>[  549.900299] smb329b_reg36h = 0x5
+<6>[  630.081085] Battery level = 13
+<6>[  630.081390] smb329b_reg00h = 0xfb
+<6>[  630.081695] smb329b_reg02h = 0x5a
+<6>[  630.081970] smb329b_reg36h = 0x5
+<6>[  700.219482] Battery level = 14
+<6>[  700.219787] smb329b_reg00h = 0xfb
+<6>[  700.220031] smb329b_reg02h = 0x5a
+<6>[  700.220275] smb329b_reg36h = 0x5
+<6>[  780.382232] Battery level = 15
+<6>[  780.382568] smb329b_reg00h = 0xfb
+<6>[  780.382843] smb329b_reg02h = 0x5a
+<6>[  780.383117] smb329b_reg36h = 0x5
+<6>[  851.012054] Battery level = 16
+<6>[  851.012390] smb329b_reg00h = 0xfb
+<6>[  851.012664] smb329b_reg02h = 0x5a
+<6>[  851.012939] smb329b_reg36h = 0x5
+<6>[  931.619262] Battery level = 17
+<6>[  931.619567] smb329b_reg00h = 0xfb
+<6>[  931.619812] smb329b_reg02h = 0x5a
+<6>[  931.620056] smb329b_reg36h = 0x5
+<6>[  991.738891] Battery level = 18
+<6>[  991.739196] smb329b_reg00h = 0xfb
+<6>[  991.739440] smb329b_reg02h = 0x5a
+<6>[  991.739685] smb329b_reg36h = 0x5
+<6>[ 1051.859832] Battery level = 19
+<6>[ 1051.860137] smb329b_reg00h = 0xfb
+<6>[ 1051.860382] smb329b_reg02h = 0x5a
+<6>[ 1051.860626] smb329b_reg36h = 0x5
+<6>[ 1142.041046] Battery level = 20
+<6>[ 1142.041320] smb329b_reg00h = 0xfb
+<6>[ 1142.041564] smb329b_reg02h = 0x5a
+<6>[ 1142.041809] smb329b_reg36h = 0x5
+<6>[ 1222.221771] Battery level = 21
+<6>[ 1222.222106] smb329b_reg00h = 0xfb
+<6>[ 1222.222381] smb329b_reg02h = 0x5a
+<6>[ 1222.222656] smb329b_reg36h = 0x5
+<6>[ 1293.191711] Battery level = 22
+<6>[ 1293.192047] smb329b_reg00h = 0xfb
+<6>[ 1293.192321] smb329b_reg02h = 0x5a
+<6>[ 1293.192596] smb329b_reg36h = 0x5
+<6>[ 1363.459503] Battery level = 23
+<6>[ 1363.459808] smb329b_reg00h = 0xfb
+<6>[ 1363.460052] smb329b_reg02h = 0x5a
+<6>[ 1363.460296] smb329b_reg36h = 0x5
+<6>[ 1433.599090] Battery level = 24
+<6>[ 1433.599365] smb329b_reg00h = 0xfb
+<6>[ 1433.599609] smb329b_reg02h = 0x5a
+<6>[ 1433.599884] smb329b_reg36h = 0x5
+<6>[ 1523.779846] Battery level = 25
+<6>[ 1523.780120] smb329b_reg00h = 0xfb
+<6>[ 1523.780395] smb329b_reg02h = 0x5a
+<6>[ 1523.780639] smb329b_reg36h = 0x5
+<6>[ 1573.879516] Battery level = 26
+<6>[ 1573.879821] smb329b_reg00h = 0xfb
+<6>[ 1573.880065] smb329b_reg02h = 0x5a
+<6>[ 1573.880310] smb329b_reg36h = 0x5
+<6>[ 1634.002624] Battery level = 27
+<6>[ 1634.002899] smb329b_reg00h = 0xfb
+<6>[ 1634.003173] smb329b_reg02h = 0x5a
+<6>[ 1634.003417] smb329b_reg36h = 0x5
+<6>[ 1734.219543] Battery level = 28
+<6>[ 1734.219818] smb329b_reg00h = 0xfb
+<6>[ 1734.220092] smb329b_reg02h = 0x5a
+<6>[ 1734.220336] smb329b_reg36h = 0x5
+<6>[ 1794.341308] Battery level = 29
+<6>[ 1794.341613] smb329b_reg00h = 0xfb
+<6>[ 1794.341918] smb329b_reg02h = 0x5a
+<6>[ 1794.342193] smb329b_reg36h = 0x5
+<6>[ 1854.459136] Battery level = 30
+<6>[ 1854.459442] smb329b_reg00h = 0xfb
+<6>[ 1854.459686] smb329b_reg02h = 0x5a
+<6>[ 1854.459960] smb329b_reg36h = 0x5
+<3>[ 1914.628143] [IS3_POWER][update_RCOMP] temp=31, NewRCOMP=0x44
+<6>[ 1914.628448] Battery level = 31
+<6>[ 1914.628479] Battery temp = 31,1053
+<6>[ 1914.628723] smb329b_reg00h = 0xfb
+<6>[ 1914.628997] smb329b_reg02h = 0x5a
+<6>[ 1914.629241] smb329b_reg36h = 0x5
+<3>[ 1924.648193] [IS3_POWER][update_RCOMP] temp=30, NewRCOMP=0x44
+<6>[ 1924.648468] Battery temp = 30,1055
+<6>[ 1924.648742] smb329b_reg00h = 0xfb
+<6>[ 1924.649017] smb329b_reg02h = 0x5a
+<6>[ 1924.649261] smb329b_reg36h = 0x5
+<6>[ 1975.092468] Battery level = 32
+<6>[ 1975.092773] smb329b_reg00h = 0xfb
+<6>[ 1975.093048] smb329b_reg02h = 0x5a
+<6>[ 1975.093322] smb329b_reg36h = 0x5
+<6>[ 2035.820251] Battery level = 33
+<6>[ 2035.820556] smb329b_reg00h = 0xfb
+<6>[ 2035.820800] smb329b_reg02h = 0x5a
+<6>[ 2035.821044] smb329b_reg36h = 0x5
+<3>[ 2156.058990] [IS3_POWER][update_RCOMP] temp=31, NewRCOMP=0x44
+<6>[ 2156.059295] Battery level = 34
+<6>[ 2156.059326] Battery temp = 31,1053
+<6>[ 2156.059600] smb329b_reg00h = 0xfb
+<6>[ 2156.059844] smb329b_reg02h = 0x5a
+<6>[ 2156.060089] smb329b_reg36h = 0x5
+<6>[ 2216.179595] Battery level = 35
+<6>[ 2216.179870] smb329b_reg00h = 0xfb
+<6>[ 2216.180114] smb329b_reg02h = 0x5a
+<6>[ 2216.180389] smb329b_reg36h = 0x5
+<6>[ 2286.338867] Battery level = 36
+<6>[ 2286.339172] smb329b_reg00h = 0xfb
+<6>[ 2286.339447] smb329b_reg02h = 0x5a
+<6>[ 2286.339721] smb329b_reg36h = 0x5
+<6>[ 2326.421600] Battery level = 37
+<6>[ 2326.421936] smb329b_reg00h = 0xfb
+<6>[ 2326.422241] smb329b_reg02h = 0x5a
+<6>[ 2326.422515] smb329b_reg36h = 0x5
+<6>[ 2397.498901] Battery level = 38
+<6>[ 2397.499176] smb329b_reg00h = 0xfb
+<6>[ 2397.499450] smb329b_reg02h = 0x5a
+<6>[ 2397.499694] smb329b_reg36h = 0x5
+<6>[ 2477.659942] Battery level = 39
+<6>[ 2477.660217] smb329b_reg00h = 0xfb
+<6>[ 2477.660491] smb329b_reg02h = 0x5a
+<6>[ 2477.660736] smb329b_reg36h = 0x5
+<6>[ 2547.831817] Battery level = 40
+<6>[ 2547.832153] smb329b_reg00h = 0xfb
+<6>[ 2547.832427] smb329b_reg02h = 0x5a
+<6>[ 2547.832702] smb329b_reg36h = 0x5
+<6>[ 2628.919952] Battery level = 41
+<6>[ 2628.920227] smb329b_reg00h = 0xfb
+<6>[ 2628.920501] smb329b_reg02h = 0x5a
+<6>[ 2628.920745] smb329b_reg36h = 0x5
+<6>[ 2689.039794] Battery level = 42
+<6>[ 2689.040069] smb329b_reg00h = 0xfb
+<6>[ 2689.040344] smb329b_reg02h = 0x5a
+<6>[ 2689.040588] smb329b_reg36h = 0x5
+<6>[ 2769.680053] Battery level = 43
+<6>[ 2769.680358] smb329b_reg00h = 0xfb
+<6>[ 2769.680633] smb329b_reg02h = 0x5a
+<6>[ 2769.680908] smb329b_reg36h = 0x5
+<6>[ 2850.339080] Battery level = 44
+<6>[ 2850.339355] smb329b_reg00h = 0xfb
+<6>[ 2850.339630] smb329b_reg02h = 0x5a
+<6>[ 2850.339874] smb329b_reg36h = 0x5
+<6>[ 2900.440032] Battery level = 45
+<6>[ 2900.440307] smb329b_reg00h = 0xfb
+<6>[ 2900.440582] smb329b_reg02h = 0x5a
+<6>[ 2900.440826] smb329b_reg36h = 0x5
+<6>[ 2954.812988] [Thermistor] temp_pa = 30,1338
+<6>[ 2980.604370] Battery level = 46
+<6>[ 2980.604644] smb329b_reg00h = 0xfb
+<6>[ 2980.604919] smb329b_reg02h = 0x5a
+<6>[ 2980.605163] smb329b_reg36h = 0x5
+<6>[ 3040.741485] Battery level = 47
+<6>[ 3040.741821] smb329b_reg00h = 0xfb
+<6>[ 3040.742095] smb329b_reg02h = 0x5a
+<6>[ 3040.742370] smb329b_reg36h = 0x5
+<6>[ 3120.898010] Battery level = 48
+<6>[ 3120.898284] smb329b_reg00h = 0xfb
+<6>[ 3120.898559] smb329b_reg02h = 0x5a
+<6>[ 3120.898834] smb329b_reg36h = 0x5
+<6>[ 3202.004058] Battery level = 49
+<6>[ 3202.004364] smb329b_reg00h = 0xfb
+<6>[ 3202.004608] smb329b_reg02h = 0x5a
+<6>[ 3202.004852] smb329b_reg36h = 0x5
+<6>[ 3262.141632] Battery level = 50
+<6>[ 3262.141906] smb329b_reg00h = 0xfb
+<6>[ 3262.142181] smb329b_reg02h = 0x5a
+<6>[ 3262.142425] smb329b_reg36h = 0x5
+<6>[ 3342.321746] Battery level = 51
+<6>[ 3342.322052] smb329b_reg00h = 0xfb
+<6>[ 3342.322357] smb329b_reg02h = 0x5a
+<6>[ 3342.322631] smb329b_reg36h = 0x5
+<6>[ 3392.421264] Battery level = 52
+<6>[ 3392.421569] smb329b_reg00h = 0xfb
+<6>[ 3392.421875] smb329b_reg02h = 0x5a
+<6>[ 3392.422149] smb329b_reg36h = 0x5
+<6>[ 3473.492248] Battery level = 53
+<6>[ 3473.492553] smb329b_reg00h = 0xfb
+<6>[ 3473.492858] smb329b_reg02h = 0x5a
+<6>[ 3473.493133] smb329b_reg36h = 0x5
+<6>[ 3563.698974] Battery level = 54
+<6>[ 3563.699279] smb329b_reg00h = 0xfb
+<6>[ 3563.699523] smb329b_reg02h = 0x5a
+<6>[ 3563.699798] smb329b_reg36h = 0x5
+<6>[ 3587.727874] [Thermistor] temp_msm = 32,1289, overheat_layer = 0
+<6>[ 3633.839416] Battery level = 55
+<6>[ 3633.839721] smb329b_reg00h = 0xfb
+<6>[ 3633.839965] smb329b_reg02h = 0x5a
+<6>[ 3633.840209] smb329b_reg36h = 0x5
+<3>[ 3638.234375] leds red: Set (2) led value to (0) Successful
+<3>[ 3638.234466] leds green: Set (3) led value to (0) Successful
+<3>[ 3638.234527] leds blue: Set (4) led value to (0) Successful
+<3>[ 3638.284393] leds red: Set (2) led value to (1) Successful
+<3>[ 3638.284484] leds green: Set (3) led value to (0) Successful
+<3>[ 3638.284545] leds blue: Set (4) led value to (0) Successful
+<3>[ 3638.294342] leds red: Set (2) led value to (0) Successful
+<3>[ 3638.294433] leds green: Set (3) led value to (0) Successful
+<3>[ 3638.294494] leds blue: Set (4) led value to (0) Successful
+<4>[ 3638.344329] pmic8058_led_work  led_notify:0x0
+<3>[ 3638.344451] leds red: Set (2) led value to (1) Successful
+<3>[ 3638.344512] leds green: Set (3) led value to (0) Successful
+<3>[ 3638.344604] leds blue: Set (4) led value to (0) Successful
+<6>[ 3713.999481] Battery level = 56
+<6>[ 3713.999786] smb329b_reg00h = 0xfb
+<6>[ 3714.000030] smb329b_reg02h = 0x5a
+<6>[ 3714.000305] smb329b_reg36h = 0x5
+<6>[ 3794.157409] Battery level = 57
+<6>[ 3794.157684] smb329b_reg00h = 0xfb
+<6>[ 3794.157928] smb329b_reg02h = 0x5a
+<6>[ 3794.158142] smb329b_reg36h = 0x5
+<6>[ 3874.319702] Battery level = 58
+<6>[ 3874.320007] smb329b_reg00h = 0xfb
+<6>[ 3874.320251] smb329b_reg02h = 0x5a
+<6>[ 3874.320495] smb329b_reg36h = 0x5
+<6>[ 3954.479187] Battery level = 59
+<6>[ 3954.479492] smb329b_reg00h = 0xfb
+<6>[ 3954.479736] smb329b_reg02h = 0x5a
+<6>[ 3954.479980] smb329b_reg36h = 0x5
+<6>[ 4044.681365] Battery level = 60
+<6>[ 4044.681701] smb329b_reg00h = 0xfb
+<6>[ 4044.681976] smb329b_reg02h = 0x5a
+<6>[ 4044.682250] smb329b_reg36h = 0x5
+<6>[ 4125.291748] Battery level = 61
+<6>[ 4125.292053] smb329b_reg00h = 0xfb
+<6>[ 4125.292327] smb329b_reg02h = 0x5a
+<6>[ 4125.292602] smb329b_reg36h = 0x5
+<6>[ 4205.938964] Battery level = 62
+<6>[ 4205.939270] smb329b_reg00h = 0xfb
+<6>[ 4205.939514] smb329b_reg02h = 0x5a
+<6>[ 4205.939758] smb329b_reg36h = 0x5
+<6>[ 4306.158782] Battery level = 63
+<6>[ 4306.159057] smb329b_reg00h = 0xfb
+<6>[ 4306.159332] smb329b_reg02h = 0x5a
+<6>[ 4306.159606] smb329b_reg36h = 0x5
+<6>[ 4386.321746] Battery level = 64
+<6>[ 4386.322082] smb329b_reg00h = 0xfb
+<6>[ 4386.322357] smb329b_reg02h = 0x5a
+<6>[ 4386.322631] smb329b_reg36h = 0x5
+<6>[ 4486.620117] Battery level = 65
+<6>[ 4486.620391] smb329b_reg00h = 0xfb
+<6>[ 4486.620666] smb329b_reg02h = 0x5a
+<6>[ 4486.620910] smb329b_reg36h = 0x5
+<6>[ 4566.781707] Battery level = 66
+<6>[ 4566.782012] smb329b_reg00h = 0xfb
+<6>[ 4566.782318] smb329b_reg02h = 0x5a
+<6>[ 4566.782562] smb329b_reg36h = 0x5
+<6>[ 4656.958892] Battery level = 67
+<6>[ 4656.959167] smb329b_reg00h = 0xfb
+<6>[ 4656.959442] smb329b_reg02h = 0x5a
+<6>[ 4656.959716] smb329b_reg36h = 0x5
+<6>[ 4747.959014] Battery level = 68
+<6>[ 4747.959289] smb329b_reg00h = 0xfb
+<6>[ 4747.959564] smb329b_reg02h = 0x5a
+<6>[ 4747.959808] smb329b_reg36h = 0x5
+<6>[ 4848.182098] Battery level = 69
+<6>[ 4848.182403] smb329b_reg00h = 0xfb
+<6>[ 4848.182678] smb329b_reg02h = 0x5a
+<6>[ 4848.182983] smb329b_reg36h = 0x5
+<6>[ 4929.299133] Battery level = 70
+<6>[ 4929.299438] smb329b_reg00h = 0xfb
+<6>[ 4929.299682] smb329b_reg02h = 0x5a
+<6>[ 4929.299926] smb329b_reg36h = 0x5
+<6>[ 4972.921142] [Thermistor] temp_msm = 31,1290, overheat_layer = 0
+<6>[ 5019.479461] Battery level = 71
+<6>[ 5019.479766] smb329b_reg00h = 0xfb
+<6>[ 5019.480010] smb329b_reg02h = 0x5a
+<6>[ 5019.480255] smb329b_reg36h = 0x5
+<6>[ 5119.701354] Battery level = 72
+<6>[ 5119.701690] smb329b_reg00h = 0xfb
+<6>[ 5119.701965] smb329b_reg02h = 0x5a
+<6>[ 5119.702270] smb329b_reg36h = 0x5
+<6>[ 5209.877441] Battery level = 73
+<6>[ 5209.877716] smb329b_reg00h = 0xfb
+<6>[ 5209.877960] smb329b_reg02h = 0x5a
+<6>[ 5209.878204] smb329b_reg36h = 0x5
+<6>[ 5300.851867] Battery level = 74
+<6>[ 5300.852172] smb329b_reg00h = 0xfb
+<6>[ 5300.852447] smb329b_reg02h = 0x5a
+<6>[ 5300.852722] smb329b_reg36h = 0x5
+<6>[ 5391.379730] Battery level = 75
+<6>[ 5391.380035] smb329b_reg00h = 0xfb
+<6>[ 5391.380310] smb329b_reg02h = 0x5a
+<6>[ 5391.380554] smb329b_reg36h = 0x5
+<6>[ 5481.581481] Battery level = 76
+<6>[ 5481.581817] smb329b_reg00h = 0xfb
+<6>[ 5481.582092] smb329b_reg02h = 0x5a
+<6>[ 5481.582366] smb329b_reg36h = 0x5
+<3>[ 5522.600860] [IS3_POWER][update_RCOMP] temp=30, NewRCOMP=0x44
+<6>[ 5522.601135] Battery temp = 30,1054
+<6>[ 5522.601409] smb329b_reg00h = 0xfb
+<6>[ 5522.601684] smb329b_reg02h = 0x5a
+<6>[ 5522.601928] smb329b_reg36h = 0x5
+<6>[ 5572.719238] Battery level = 77
+<6>[ 5572.719512] smb329b_reg00h = 0xfb
+<6>[ 5572.719787] smb329b_reg02h = 0x5a
+<6>[ 5572.720031] smb329b_reg36h = 0x5
+<6>[ 5652.879180] Battery level = 78
+<6>[ 5652.879455] smb329b_reg00h = 0xfb
+<6>[ 5652.879730] smb329b_reg02h = 0x5a
+<6>[ 5652.879974] smb329b_reg36h = 0x5
+<6>[ 5743.058959] Battery level = 79
+<6>[ 5743.059265] smb329b_reg00h = 0xfb
+<6>[ 5743.059509] smb329b_reg02h = 0x5a
+<6>[ 5743.059753] smb329b_reg36h = 0x5
+<6>[ 5833.239593] Battery level = 80
+<6>[ 5833.239898] smb329b_reg00h = 0xfb
+<6>[ 5833.240142] smb329b_reg02h = 0x5a
+<6>[ 5833.240386] smb329b_reg36h = 0x5
+<6>[ 5923.419372] Battery level = 81
+<6>[ 5923.419677] smb329b_reg00h = 0xfb
+<6>[ 5923.419921] smb329b_reg02h = 0x5a
+<6>[ 5923.420166] smb329b_reg36h = 0x5
+<6>[ 5937.332214] [Thermistor] temp_pa = 29,1339
+<6>[ 6003.583190] Battery level = 82
+<6>[ 6003.583496] smb329b_reg00h = 0xfb
+<6>[ 6003.583892] smb329b_reg02h = 0x5a
+<6>[ 6003.584136] smb329b_reg36h = 0x5
+<6>[ 6103.800231] Battery level = 83
+<6>[ 6103.800506] smb329b_reg00h = 0xfb
+<6>[ 6103.800781] smb329b_reg02h = 0x5a
+<6>[ 6103.801025] smb329b_reg36h = 0x5
+<6>[ 6183.961791] Battery level = 84
+<6>[ 6183.962127] smb329b_reg00h = 0xfb
+<6>[ 6183.962402] smb329b_reg02h = 0x5a
+<6>[ 6183.962707] smb329b_reg36h = 0x5
+<3>[ 6214.021453] [IS3_POWER][update_RCOMP] temp=29, NewRCOMP=0x45
+<6>[ 6214.021759] Battery temp = 29,1069
+<6>[ 6214.022033] smb329b_reg00h = 0xfb
+<6>[ 6214.022308] smb329b_reg02h = 0x5a
+<6>[ 6214.022583] smb329b_reg36h = 0x5
+<6>[ 6238.739227] [Thermistor] temp_msm = 30,1314, overheat_layer = 0
+<6>[ 6285.107330] Battery level = 85
+<6>[ 6285.107604] smb329b_reg00h = 0xfb
+<6>[ 6285.107849] smb329b_reg02h = 0x5a
+<6>[ 6285.108093] smb329b_reg36h = 0x5
+<6>[ 6385.319824] Battery level = 86
+<6>[ 6385.320129] smb329b_reg00h = 0xfb
+<6>[ 6385.320373] smb329b_reg02h = 0x5a
+<6>[ 6385.320648] smb329b_reg36h = 0x5
+<6>[ 6475.499145] Battery level = 87
+<6>[ 6475.499450] smb329b_reg00h = 0xfb
+<6>[ 6475.499694] smb329b_reg02h = 0x5a
+<6>[ 6475.499969] smb329b_reg36h = 0x5
+<6>[ 6565.682006] Battery level = 88
+<6>[ 6565.683105] smb329b_reg00h = 0xfb
+<6>[ 6565.683410] smb329b_reg02h = 0x5a
+<6>[ 6565.683776] smb329b_reg36h = 0x5
+<6>[ 6675.920318] Battery level = 89
+<6>[ 6675.920623] smb329b_reg00h = 0xfb
+<6>[ 6675.920867] smb329b_reg02h = 0x5a
+<6>[ 6675.921142] smb329b_reg36h = 0x5
+<6>[ 6776.120269] Battery level = 90
+<6>[ 6776.120605] smb329b_reg00h = 0xfb
+<6>[ 6776.120880] smb329b_reg02h = 0x5a
+<6>[ 6776.121154] smb329b_reg36h = 0x5
+<6>[ 6886.960876] Battery level = 91
+<6>[ 6886.961181] smb329b_reg00h = 0xfb
+<6>[ 6886.961456] smb329b_reg02h = 0x5a
+<6>[ 6886.961730] smb329b_reg36h = 0x5
+<3>[ 6907.329132] [IS3_POWER][update_RCOMP] temp=28, NewRCOMP=0x45
+<6>[ 6907.329406] Battery temp = 28,1085
+<6>[ 6907.329681] smb329b_reg00h = 0xfb
+<6>[ 6907.329925] smb329b_reg02h = 0x5a
+<6>[ 6907.330200] smb329b_reg36h = 0x5
+<6>[ 6997.541381] Battery level = 92
+<6>[ 6997.541687] smb329b_reg00h = 0xfb
+<6>[ 6997.541961] smb329b_reg02h = 0x5a
+<6>[ 6997.542236] smb329b_reg36h = 0x5
+<6>[ 7097.741302] Battery level = 93
+<6>[ 7097.741607] smb329b_reg00h = 0xfb
+<6>[ 7097.741882] smb329b_reg02h = 0x5a
+<6>[ 7097.742156] smb329b_reg36h = 0x5
+<6>[ 7141.962463] [Thermistor] temp_pa = 28,1363
+<6>[ 7202.140838] [Thermistor] temp_msm = 29,1340, overheat_layer = 0
+<6>[ 7218.938842] Battery level = 94
+<6>[ 7218.939117] smb329b_reg00h = 0xfb
+<6>[ 7218.939392] smb329b_reg02h = 0x5a
+<6>[ 7218.939636] smb329b_reg36h = 0x5
+<3>[ 7242.714385] leds red: Set (2) led value to (0) Successful
+<3>[ 7242.714508] leds green: Set (3) led value to (0) Successful
+<3>[ 7242.714569] leds blue: Set (4) led value to (0) Successful
+<3>[ 7242.764373] leds red: Set (2) led value to (1) Successful
+<3>[ 7242.764465] leds green: Set (3) led value to (0) Successful
+<3>[ 7242.764526] leds blue: Set (4) led value to (0) Successful
+<3>[ 7242.773864] leds red: Set (2) led value to (0) Successful
+<3>[ 7242.773956] leds green: Set (3) led value to (0) Successful
+<3>[ 7242.774017] leds blue: Set (4) led value to (0) Successful
+<4>[ 7242.824310] pmic8058_led_work  led_notify:0x0
+<3>[ 7242.824432] leds red: Set (2) led value to (1) Successful
+<3>[ 7242.824493] leds green: Set (3) led value to (0) Successful
+<3>[ 7242.824554] leds blue: Set (4) led value to (0) Successful
+<6>[ 7329.162567] Battery level = 95
+<6>[ 7329.162872] smb329b_reg00h = 0xfb
+<6>[ 7329.163116] smb329b_reg02h = 0x5a
+<6>[ 7329.163360] smb329b_reg36h = 0x5
+<6>[ 7449.421417] Battery level = 96
+<6>[ 7449.421752] smb329b_reg00h = 0xfb
+<6>[ 7449.422027] smb329b_reg02h = 0x5a
+<6>[ 7449.422302] smb329b_reg36h = 0x5
+<6>[ 7457.959625] rmt_storage_event_write_iovec_cb: write iovec callback received
+<6>[ 7459.175415] rmt_storage_ioctl: send status ioctl
+<6>[ 7570.609710] Battery level = 97
+<6>[ 7570.610015] smb329b_reg00h = 0xfb
+<6>[ 7570.610260] smb329b_reg02h = 0x5a
+<6>[ 7570.610504] smb329b_reg36h = 0x5
+<3>[ 7580.639465] [IS3_POWER][update_RCOMP] temp=27, NewRCOMP=0x46
+<6>[ 7580.639739] Battery temp = 27,1101
+<6>[ 7580.640014] smb329b_reg00h = 0xfb
+<6>[ 7580.640258] smb329b_reg02h = 0x5a
+<6>[ 7580.640502] smb329b_reg36h = 0x5
+<6>[ 7680.860473] Battery level = 98
+<6>[ 7680.860778] smb329b_reg00h = 0xfb
+<6>[ 7680.861022] smb329b_reg02h = 0x5a
+<6>[ 7680.861297] smb329b_reg36h = 0x7
+<6>[ 7821.280395] Battery level = 99
+<6>[ 7821.280700] smb329b_reg00h = 0xfb
+<6>[ 7821.280944] smb329b_reg02h = 0x5a
+<6>[ 7821.281188] smb329b_reg36h = 0x7
+<6>[ 7982.418365] Battery level = 100
+<6>[ 7982.418640] smb329b_reg00h = 0xfb
+<6>[ 7982.418884] smb329b_reg02h = 0x5a
+<6>[ 7982.419128] smb329b_reg36h = 0x7
+<4>[ 7982.442626] led_notify_store state:0x0 notify:0x0 charge:0x0
+<3>[ 7982.447052] leds red: Set (2) led value to (0) Successful
+<3>[ 7982.447143] leds green: Set (3) led value to (0) Successful
+<3>[ 7982.447204] leds blue: Set (4) led value to (0) Successful
+<3>[ 7982.447326] leds red: Set (2) led value to (0) Successful
+<3>[ 7982.447357] leds green: Set (3) led value to (0) Successful
+<3>[ 7982.447418] leds blue: Set (4) led value to (0) Successful
+<3>[ 7982.447906] leds red: Set (2) led value to (0) Successful
+<3>[ 7982.447967] leds green: Set (3) led value to (0) Successful
+<3>[ 7982.448028] leds blue: Set (4) led value to (0) Successful
+<3>[ 7982.448120] leds red: Set (2) led value to (0) Successful
+<3>[ 7982.448181] leds green: Set (3) led value to (0) Successful
+<3>[ 7982.448242] leds blue: Set (4) led value to (0) Successful
+<3>[ 7982.448669] leds red: Set (2) led value to (0) Successful
+<3>[ 7982.448760] leds green: Set (3) led value to (0) Successful
+<3>[ 7982.448822] leds blue: Set (4) led value to (0) Successful
+<3>[ 7982.448913] leds red: Set (2) led value to (0) Successful
+<3>[ 7982.448974] leds green: Set (3) led value to (0) Successful
+<3>[ 7982.449035] leds blue: Set (4) led value to (0) Successful
+<4>[ 7982.455261] led_notify_store state:0x0 notify:0x0 charge:0x0
+<6>[ 8058.673400] request_suspend_state: wakeup (3->0) at 8058679828394 (2011-01-10 19:36:43.531231342 UTC)
+<0>[ 8058.694305] [LCD]lcdc_chimei_panel_power
+<0>[ 8058.696014] [LCD]lcdc_chimei_panel_on
+<0>[ 8058.696014] [LCD]chimei_disp_powerup
+<0>[ 8058.696044] [LCD]chimei_disp_on
+<4>[ 8058.734954] ==ft5x0x_ts_resume=
+<4>[ 8059.053649] ==ft5x0x_ts_resume enable VDD=
+<4>[ 8059.053680] ==ft5x0x_ts_resume enable irq_num: 1 ==
+<7>[ 8059.053710] msm_batt_late_resume: 
+<3>[ 8059.053710] 2011-01-10 19:36:43.911541415
+<0>[ 8059.053741] LCD--chimei_resume
+<4>[ 8059.053771]  == ft5x0x_ts_interrupt ==
+<4>[ 8059.053771]  == ft5x0x_ts_pen_irq_work ==
+<7>[ 8059.643646] [LCD]: BrightnessLevel = 1
+<7>[ 8060.533691] [LCD]: BrightnessLevel = 5
+<4>[ 8060.726409]  == ft5x0x_ts_interrupt ==
+<4>[ 8060.726684]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8060.727691] ft5x0x_report_value: [ x , y ][4] = [ 254 , 572 ][ev 0][0]
+<4>[ 8060.743316]  == ft5x0x_ts_interrupt ==
+<4>[ 8060.743408]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8060.744323] ft5x0x_report_value: [ x , y ][3] = [ 254 , 572 ][ev 2][0]
+<4>[ 8060.761108]  == ft5x0x_ts_interrupt ==
+<4>[ 8060.761199]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8060.762115] ft5x0x_report_value: [ x , y ][2] = [ 254 , 572 ][ev 2][0]
+<4>[ 8060.778015]  == ft5x0x_ts_interrupt ==
+<4>[ 8060.778076]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8060.778991] ft5x0x_report_value: [ x , y ][1] = [ 254 , 572 ][ev 2][0]
+<4>[ 8061.007110] [VIB] vibrator On(time[30])
+<4>[ 8061.007110] timed_vibrator_on on
+<4>[ 8061.008178] set_pmic_vibrator flag_off
+<4>[ 8061.037170] [VIB] vibrator_timer_func call
+<4>[ 8061.037200] timed_vibrator_off on
+<4>[ 8061.038452] set_pmic_vibrator flag_off
+<4>[ 8061.052032] [VIB] vibrator On(time[40])
+<4>[ 8061.052062] timed_vibrator_on on
+<4>[ 8061.053436] set_pmic_vibrator flag_off
+<4>[ 8061.092224] [VIB] vibrator Off(time[-1])
+<4>[ 8061.092254] timed_vibrator_off on
+<4>[ 8061.095275] set_pmic_vibrator flag_off
+<6>[ 8062.764038] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8062.764465]  == [ enable_ps_int ] 1 ==
+<4>[ 8062.824035] == enable_ps_int == enable irq
+<6>[ 8063.866333] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8063.866821]  == [ enable_ps_int ] 0 ==
+<4>[ 8063.866851] == enable_ps_int == disable irq
+<6>[ 8066.895294] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8066.895751]  == [ enable_ps_int ] 1 ==
+<4>[ 8066.954254] == enable_ps_int == enable irq
+<6>[ 8067.978210] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8067.978515]  == [ enable_ps_int ] 0 ==
+<4>[ 8067.978515] == enable_ps_int == disable irq
+<6>[ 8071.027374] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8071.027801]  == [ enable_ps_int ] 1 ==
+<4>[ 8071.083770] == enable_ps_int == enable irq
+<6>[ 8072.109405] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8072.109832]  == [ enable_ps_int ] 0 ==
+<4>[ 8072.109893] == enable_ps_int == disable irq
+<6>[ 8075.119934] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8075.120208]  == [ enable_ps_int ] 1 ==
+<4>[ 8075.173645] == enable_ps_int == enable irq
+<6>[ 8076.190612] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8076.190887]  == [ enable_ps_int ] 0 ==
+<4>[ 8076.190887] == enable_ps_int == disable irq
+<6>[ 8079.212860] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8079.214111]  == [ enable_ps_int ] 1 ==
+<4>[ 8079.274017] == enable_ps_int == enable irq
+<6>[ 8080.308227] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8080.308654]  == [ enable_ps_int ] 0 ==
+<4>[ 8080.308654] == enable_ps_int == disable irq
+<6>[ 8083.351593] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8083.352172]  == [ enable_ps_int ] 1 ==
+<4>[ 8083.403808] == enable_ps_int == enable irq
+<6>[ 8084.431945] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8084.432525]  == [ enable_ps_int ] 0 ==
+<4>[ 8084.432556] == enable_ps_int == disable irq
+<6>[ 8087.442993] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8087.443237]  == [ enable_ps_int ] 1 ==
+<4>[ 8087.494171] == enable_ps_int == enable irq
+<6>[ 8088.517944] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8088.520294]  == [ enable_ps_int ] 0 ==
+<4>[ 8088.520355] == enable_ps_int == disable irq
+<7>[ 8089.203704] [LCD]: BrightnessLevel = 0
+<7>[ 8089.263671] [LCD]: BrightnessLevel = 0
+<6>[ 8089.264373] request_suspend_state: sleep (0->3) at 8089270770810 (2011-01-10 19:37:14.122143240 UTC)
+<0>[ 8089.265533] LCD--chimei_suspend
+<7>[ 8089.339050] msm_batt_early_suspend: 
+<3>[ 8089.339141] 2011-01-10 19:37:14.196941822
+<4>[ 8089.339172]  == ft5x0x_ts_suspend == irq_num: 0 
+<4>[ 8089.339935] ==ft5x0x_ts_suspend disable VDD=
+<0>[ 8089.413665] [LCD]lcdc_chimei_panel_off
+<0>[ 8089.413696] [LCD]lcdc_chimei_panel_power
+<6>[ 8089.443756] active wake lock PowerManagerService
+<6>[ 8089.443786] active wake lock sensors_server
+<6>[ 8089.443786] active wake lock charging_active
+<6>[ 8089.443817] PM: Syncing filesystems...
+<6>[ 8089.535125] sync done.
+<3>[ 8124.811981] [IS3_POWER] smb329b_vbus_det_irq()
+<6>[ 8124.812530] msm_otg_resume: usb exited from low power mode
+<3>[ 8124.812622] >>>>>> USB disconnect
+<3>[ 8124.812652] [IS3_POWER] << smb329b_vbus_draw2 -- call det_work >>
+<3>[ 8124.812713] [IS3_POWER] smb329b_draw = 0
+<3>[ 8124.914794] [IS3_POWER] smb329b_is_charging - SMB329B_STATUS_B_REG 0x36 = 0x0
+<6>[ 8124.914886] [IS3_POWER] send keycode=K_CHG_ST_NONE to AP
+<4>[ 8124.914947] got CHG_ST_NTFY_CODE key_code = 224, key_parm = 0, key = 341
+<6>[ 8124.920989] android_work: did not send uevent (0 0   (null))
+<3>[ 8124.921112] [IS3_POWER] smb329b_stop_charging - ok
+<4>[ 8125.056610] led_notify_store state:0x0 notify:0x0 charge:0x0
+<6>[ 8125.143707] msm_otg_suspend: usb in low power mode
+<6>[ 8126.297943] request_suspend_state: wakeup (3->0) at 8126304340143 (2011-01-10 19:37:51.155743091 UTC)
+<0>[ 8126.324401] [LCD]lcdc_chimei_panel_power
+<0>[ 8126.326782] [LCD]lcdc_chimei_panel_on
+<0>[ 8126.326812] [LCD]chimei_disp_powerup
+<0>[ 8126.326812] [LCD]chimei_disp_on
+<4>[ 8126.374847] ==ft5x0x_ts_resume=
+<7>[ 8126.473663] [LCD]: BrightnessLevel = 1
+<4>[ 8126.694000] ==ft5x0x_ts_resume enable VDD=
+<4>[ 8126.694030] ==ft5x0x_ts_resume enable irq_num: 1 ==
+<7>[ 8126.694061] msm_batt_late_resume: 
+<3>[ 8126.694061] 2011-01-10 19:37:51.551891775
+<0>[ 8126.694091] LCD--chimei_resume
+<4>[ 8126.694122]  == ft5x0x_ts_interrupt ==
+<4>[ 8126.694152]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8127.257537]  == ft5x0x_ts_interrupt ==
+<4>[ 8127.257690]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8127.258697] ft5x0x_report_value: [ x , y ][4] = [ 246 , 549 ][ev 0][0]
+<4>[ 8127.274353]  == ft5x0x_ts_interrupt ==
+<4>[ 8127.274414]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8127.275299] ft5x0x_report_value: [ x , y ][3] = [ 246 , 549 ][ev 2][0]
+<4>[ 8127.280212] [VIB] vibrator On(time[30])
+<4>[ 8127.280242] timed_vibrator_on on
+<4>[ 8127.281372] set_pmic_vibrator flag_off
+<4>[ 8127.292144]  == ft5x0x_ts_interrupt ==
+<4>[ 8127.292205]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8127.293090] ft5x0x_report_value: [ x , y ][2] = [ 246 , 549 ][ev 2][0]
+<4>[ 8127.309020]  == ft5x0x_ts_interrupt ==
+<4>[ 8127.309051]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8127.309936] ft5x0x_report_value: [ x , y ][1] = [ 246 , 549 ][ev 2][0]
+<4>[ 8127.310150] [VIB] vibrator Off(time[0])
+<4>[ 8127.310180] timed_vibrator_off on
+<4>[ 8127.314849] set_pmic_vibrator flag_off
+<4>[ 8127.345153] [VIB] vibrator On(time[40])
+<4>[ 8127.345184] timed_vibrator_on on
+<4>[ 8127.346221] set_pmic_vibrator flag_off
+<4>[ 8127.385223] [VIB] vibrator_timer_func call
+<4>[ 8127.385253] timed_vibrator_off on
+<4>[ 8127.386291] set_pmic_vibrator flag_off
+<7>[ 8127.473632] [LCD]: BrightnessLevel = 5
+<6>[ 8129.608123] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8129.608642]  == [ enable_ps_int ] 1 ==
+<4>[ 8129.663696] == enable_ps_int == enable irq
+<3>[ 8129.974456] [IS3_POWER] wake_unlock(suspend)
+<6>[ 8130.703430] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8130.704010]  == [ enable_ps_int ] 0 ==
+<4>[ 8130.704071] == enable_ps_int == disable irq
+<6>[ 8133.716796] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8133.717254]  == [ enable_ps_int ] 1 ==
+<4>[ 8133.773651] == enable_ps_int == enable irq
+<6>[ 8134.797119] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8134.797546]  == [ enable_ps_int ] 0 ==
+<4>[ 8134.797546] == enable_ps_int == disable irq
+<6>[ 8137.818328] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8137.818603]  == [ enable_ps_int ] 1 ==
+<4>[ 8137.873718] == enable_ps_int == enable irq
+<6>[ 8138.905700] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8138.906829]  == [ enable_ps_int ] 0 ==
+<4>[ 8138.906860] == enable_ps_int == disable irq
+<6>[ 8141.957946] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8141.958343]  == [ enable_ps_int ] 1 ==
+<4>[ 8142.013885] == enable_ps_int == enable irq
+<6>[ 8143.039794] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8143.041564]  == [ enable_ps_int ] 0 ==
+<4>[ 8143.041625] == enable_ps_int == disable irq
+<6>[ 8144.466278] enable_store: enabled=0
+<6>[ 8144.466339] android_unbind_enabled_functions: gserial_port[0]
+<6>[ 8144.482116] enable_store: enabled=0
+<3>[ 8144.482147] android_usb: already disabled
+<6>[ 8144.482391] functions_store: buf=mtp,adb
+<6>[ 8144.482513] enable_store: enabled=1
+<6>[ 8144.482513] mtp_bind_config
+<6>[ 8144.482574] adb_bind_config
+<6>[ 8144.482604] android_bind_enabled_functions: gserial_port[0]
+<6>[ 8144.482604] debugusb_set_pid_to_nv : pid=135e nv_ope=0
+<6>[ 8144.491333] adb_open
+<6>[ 8146.072540] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8146.072967]  == [ enable_ps_int ] 1 ==
+<4>[ 8146.123657] == enable_ps_int == enable irq
+<6>[ 8147.139709] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8147.139984]  == [ enable_ps_int ] 0 ==
+<4>[ 8147.139984] == enable_ps_int == disable irq
+<6>[ 8150.205932] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8150.206329]  == [ enable_ps_int ] 1 ==
+<4>[ 8150.263641] == enable_ps_int == enable irq
+<6>[ 8151.280029] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8151.280395]  == [ enable_ps_int ] 0 ==
+<4>[ 8151.280426] == enable_ps_int == disable irq
+<6>[ 8154.314392] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8154.314666]  == [ enable_ps_int ] 1 ==
+<4>[ 8154.373657] == enable_ps_int == enable irq
+<6>[ 8155.403717] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8155.403961]  == [ enable_ps_int ] 0 ==
+<4>[ 8155.403991] == enable_ps_int == disable irq
+<6>[ 8158.426422] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8158.426849]  == [ enable_ps_int ] 1 ==
+<4>[ 8158.484680] == enable_ps_int == enable irq
+<6>[ 8159.505401] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8159.505828]  == [ enable_ps_int ] 0 ==
+<4>[ 8159.505889] == enable_ps_int == disable irq
+<6>[ 8162.517486] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8162.517761]  == [ enable_ps_int ] 1 ==
+<4>[ 8162.573638] == enable_ps_int == enable irq
+<6>[ 8163.636444] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8163.636871]  == [ enable_ps_int ] 0 ==
+<4>[ 8163.636901] == enable_ps_int == disable irq
+<3>[ 8164.272979] [IS3_POWER] smb329b_vbus_det_irq()
+<3>[ 8164.273223] >>>>>> USB connect
+<3>[ 8164.273284] [IS3_POWER] << smb329b_vbus_draw2 -- call det_work >>
+<3>[ 8164.273345] [IS3_POWER] smb329b_draw = 500
+<3>[ 8164.642272] [IS3_POWER] wake_lock(suspend)
+<3>[ 8164.642395] [IS3_POWER] set chg(USB-500 mode)
+<6>[ 8164.642639] msm_otg_resume: usb exited from low power mode
+<6>[ 8164.672637] msm_hsusb msm_hsusb: reset controller
+<3>[ 8164.820343] [IS3_POWER] start_charging_set - ok
+<4>[ 8164.824859] led_notify_store state:0x0 notify:0x0 charge:0x0
+<6>[ 8164.893646] msm_hsusb msm_hsusb: reset controller done
+<6>[ 8164.895507] android_work: did not send uevent (0 0   (null))
+<6>[ 8165.061828] msm_hsusb msm_hsusb: reset
+<6>[ 8165.133880] android_work: sent uevent USB_STATE=CONNECTED
+<6>[ 8165.136047] msm_hsusb msm_hsusb: reset
+<6>[ 8165.226196] android_usb gadget: high speed config #1: android
+<6>[ 8165.226806] android_work: sent uevent USB_STATE=CONFIGURED
+<6>[ 8165.330108] mtp_open
+<3>[ 8165.893676] [USB] usb_get_chg_type(PORTSC_LS) = 0x0
+<3>[ 8165.893737] [IS3_POWER] << smb329b_vbus_draw2 -- call det_work3(USB) >>
+<3>[ 8165.893768] [USB] qci_offline_charging_status()=0
+<6>[ 8165.893798] 
+<6>[ 8165.893829] Charger Type: STD DOWNSTREAM PORT
+<4>[ 8165.959228] led_notify_store state:0x0 notify:0x0 charge:0x0
+<6>[ 8166.657623] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8166.658020]  == [ enable_ps_int ] 1 ==
+<4>[ 8166.714233] == enable_ps_int == enable irq
+<6>[ 8167.768463] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8167.768890]  == [ enable_ps_int ] 0 ==
+<4>[ 8167.768951] == enable_ps_int == disable irq
+<6>[ 8170.791717] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8170.792297]  == [ enable_ps_int ] 1 ==
+<4>[ 8170.843750] == enable_ps_int == enable irq
+<6>[ 8171.860717] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8171.861053]  == [ enable_ps_int ] 0 ==
+<4>[ 8171.861083] == enable_ps_int == disable irq
+<7>[ 8171.923614] [LCD]: BrightnessLevel = 0
+<7>[ 8171.983642] [LCD]: BrightnessLevel = 0
+<6>[ 8171.984344] request_suspend_state: sleep (0->3) at 8171990741512 (2011-01-10 19:38:36.842144460 UTC)
+<0>[ 8171.984436] LCD--chimei_suspend
+<7>[ 8172.052154] msm_batt_early_suspend: 
+<3>[ 8172.052246] 2011-01-10 19:38:36.910046072
+<4>[ 8172.052307]  == ft5x0x_ts_suspend == irq_num: 0 
+<4>[ 8172.053070] ==ft5x0x_ts_suspend disable VDD=
+<0>[ 8172.103668] [LCD]lcdc_chimei_panel_off
+<0>[ 8172.103698] [LCD]lcdc_chimei_panel_power
+<6>[ 8172.133758] active wake lock PowerManagerService
+<6>[ 8172.133789] active wake lock usb_bus_active
+<6>[ 8172.133789] active wake lock msm_otg
+<6>[ 8172.133789] active wake lock charging_active
+<6>[ 8172.133819] active wake lock sensors_server
+<6>[ 8172.133819] PM: Syncing filesystems...
+<6>[ 8172.238189] sync done.
+<6>[ 8174.899047] [PM8058] USB_VBUS_STATE pin = 1538 mV
+<6>[ 8291.482757] request_suspend_state: wakeup (3->0) at 8291489154565 (2011-01-10 19:40:36.340557513 UTC)
+<0>[ 8291.504211] [LCD]lcdc_chimei_panel_power
+<0>[ 8291.505920] [LCD]lcdc_chimei_panel_on
+<0>[ 8291.505920] [LCD]chimei_disp_powerup
+<0>[ 8291.505920] [LCD]chimei_disp_on
+<4>[ 8291.546478] ==ft5x0x_ts_resume=
+<7>[ 8291.613677] [LCD]: BrightnessLevel = 1
+<4>[ 8291.863677] ==ft5x0x_ts_resume enable VDD=
+<4>[ 8291.863708] ==ft5x0x_ts_resume enable irq_num: 1 ==
+<7>[ 8291.863708] msm_batt_late_resume: 
+<3>[ 8291.863739] 2011-01-10 19:40:36.721569491
+<0>[ 8291.863739] LCD--chimei_resume
+<4>[ 8291.864227]  == ft5x0x_ts_interrupt ==
+<4>[ 8291.864257]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8292.444641]  == ft5x0x_ts_interrupt ==
+<4>[ 8292.444732]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8292.445739] ft5x0x_report_value: [ x , y ][4] = [ 263 , 547 ][ev 0][0]
+<4>[ 8292.460693] [VIB] vibrator On(time[30])
+<4>[ 8292.460723] timed_vibrator_on on
+<4>[ 8292.461883] set_pmic_vibrator flag_off
+<4>[ 8292.462402]  == ft5x0x_ts_interrupt ==
+<4>[ 8292.462432]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8292.463317] ft5x0x_report_value: [ x , y ][3] = [ 263 , 547 ][ev 2][0]
+<4>[ 8292.479248]  == ft5x0x_ts_interrupt ==
+<4>[ 8292.479553]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8292.480438] ft5x0x_report_value: [ x , y ][2] = [ 263 , 547 ][ev 2][0]
+<4>[ 8292.490783] [VIB] vibrator_timer_func call
+<4>[ 8292.490814] timed_vibrator_off on
+<4>[ 8292.492004] set_pmic_vibrator flag_off
+<4>[ 8292.497039]  == ft5x0x_ts_interrupt ==
+<4>[ 8292.497070]  == ft5x0x_ts_pen_irq_work ==
+<4>[ 8292.497924] ft5x0x_report_value: [ x , y ][1] = [ 263 , 547 ][ev 2][0]
+<4>[ 8292.563385] [VIB] vibrator On(time[40])
+<4>[ 8292.563415] timed_vibrator_on on
+<4>[ 8292.564697] set_pmic_vibrator flag_off
+<4>[ 8292.603515] [VIB] vibrator_timer_func call
+<4>[ 8292.603607] timed_vibrator_off on
+<4>[ 8292.605163] set_pmic_vibrator flag_off
+<7>[ 8292.643707] [LCD]: BrightnessLevel = 5
+<6>[ 8294.763000] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8294.763427]  == [ enable_ps_int ] 1 ==
+<4>[ 8294.823791] == enable_ps_int == enable irq
+<6>[ 8295.847564] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8295.847991]  == [ enable_ps_int ] 0 ==
+<4>[ 8295.848052] == enable_ps_int == disable irq
+<6>[ 8298.877227] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8298.877532]  == [ enable_ps_int ] 1 ==
+<4>[ 8298.933654] == enable_ps_int == enable irq
+<6>[ 8299.953460] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8299.953979]  == [ enable_ps_int ] 0 ==
+<4>[ 8299.954040] == enable_ps_int == disable irq
+<6>[ 8302.989898] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8302.990356]  == [ enable_ps_int ] 1 ==
+<4>[ 8303.043701] == enable_ps_int == enable irq
+<6>[ 8304.069519] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8304.071105]  == [ enable_ps_int ] 0 ==
+<4>[ 8304.071166] == enable_ps_int == disable irq
+<6>[ 8307.080291] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8307.080718]  == [ enable_ps_int ] 1 ==
+<4>[ 8307.134368] == enable_ps_int == enable irq
+<6>[ 8308.155792] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8308.156219]  == [ enable_ps_int ] 0 ==
+<4>[ 8308.156280] == enable_ps_int == disable irq
+<6>[ 8311.174011] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8311.174285]  == [ enable_ps_int ] 1 ==
+<4>[ 8311.233642] == enable_ps_int == enable irq
+<6>[ 8312.281372] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8312.281616]  == [ enable_ps_int ] 0 ==
+<4>[ 8312.281646] == enable_ps_int == disable irq
+<6>[ 8315.298034] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8315.298553]  == [ enable_ps_int ] 1 ==
+<4>[ 8315.353881] == enable_ps_int == enable irq
+<6>[ 8316.375427] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8316.375854]  == [ enable_ps_int ] 0 ==
+<4>[ 8316.375915] == enable_ps_int == disable irq
+<6>[ 8316.572448] [Thermistor] temp_msm = 30,1330, overheat_layer = 0
+<6>[ 8319.390014] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8319.390441]  == [ enable_ps_int ] 1 ==
+<4>[ 8319.443725] == enable_ps_int == enable irq
+<6>[ 8320.469543] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8320.469970]  == [ enable_ps_int ] 0 ==
+<4>[ 8320.470031] == enable_ps_int == disable irq
+<6>[ 8323.489135] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8323.489410]  == [ enable_ps_int ] 1 ==
+<4>[ 8323.543609] == enable_ps_int == enable irq
+<6>[ 8324.592651] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8324.593261]  == [ enable_ps_int ] 0 ==
+<4>[ 8324.593322] == enable_ps_int == disable irq
+<6>[ 8327.607879] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8327.608154]  == [ enable_ps_int ] 1 ==
+<4>[ 8327.663604] == enable_ps_int == enable irq
+<6>[ 8328.682342] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8328.682769]  == [ enable_ps_int ] 0 ==
+<4>[ 8328.682830] == enable_ps_int == disable irq
+<6>[ 8331.710266] stk-oss: STK PS31xx Driver : Enable PS : 1
+<4>[ 8331.710693]  == [ enable_ps_int ] 1 ==
+<4>[ 8331.763763] == enable_ps_int == enable irq
+<6>[ 8332.807922] stk-oss: STK PS31xx Driver : Enable PS : 0
+<4>[ 8332.808319]  == [ enable_ps_int ] 0 ==
+<4>[ 8332.808349] == enable_ps_int == disable irq
+<7>[ 8332.873626] [LCD]: BrightnessLevel = 0
+<7>[ 8332.933654] [LCD]: BrightnessLevel = 0
+<6>[ 8332.934570] request_suspend_state: sleep (0->3) at 8332940936824 (2011-01-10 19:41:17.792339772 UTC)
+<0>[ 8332.934661] LCD--chimei_suspend
+<7>[ 8333.001220] msm_batt_early_suspend: 
+<3>[ 8333.001312] 2011-01-10 19:41:17.859112234
+<4>[ 8333.001342]  == ft5x0x_ts_suspend == irq_num: 0 
+<4>[ 8333.002105] ==ft5x0x_ts_suspend disable VDD=
+<0>[ 8333.054626] [LCD]lcdc_chimei_panel_off
+<0>[ 8333.054656] [LCD]lcdc_chimei_panel_power
+<6>[ 8333.083801] active wake lock PowerManagerService
+<6>[ 8333.083831] active wake lock sensors_server
+<6>[ 8333.083831] active wake lock usb_bus_active
+<6>[ 8333.083831] active wake lock msm_otg
+<6>[ 8333.083831] active wake lock charging_active
+<6>[ 8333.083862] PM: Syncing filesystems...
+<6>[ 8333.327362] sync done.
