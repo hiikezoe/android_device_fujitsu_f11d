@@ -3,7 +3,7 @@
 ## Boot modes
 
 ### Recovery mode
-    Menu + Power on
+    Menu + Back + Power on
 
 ### MMC Storage mode (05c6:9006)
     Volume up + Volume down + Power on
