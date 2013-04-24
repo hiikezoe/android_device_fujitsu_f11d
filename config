@@ -24,7 +24,9 @@ flash_f11d()
 		run_adb reboot bootloader ;
 		run_fastboot devices &&
 		fastboot_flash_boot_image_in_recovery &&
-		run_fastboot reboot
+		run_fastboot reboot &&
+		run_adb wait-for-device &&
+		run_adb reboot recovery ;
 		;;
 	"userdata")
 		;;
