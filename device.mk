@@ -9,5 +9,5 @@ PRODUCT_COPY_FILES += \
   device/fujitsu/f11d/root/init.qcom.ril.path.sh:root/init.qcom.ril.path.sh \
   device/fujitsu/f11d/root/init.qcom.sh:root/init.qcom.sh \
   device/fujitsu/f11d/root/initlogo.rle:root/initlogo.rle \
-  device/fujitsu/f11d/root/ueventd.rc:root/ueventd.rc
-
+  device/fujitsu/f11d/root/ueventd.rc:root/ueventd.rc \
+  device/fujitsu/f11d/system/ft5x0x_ts.idc:system/usr/idc/ft5x0x_ts.idc
