@@ -17,6 +17,7 @@ B2G for F-11Dは、オリジナルのAndroid環境を残したままインスト
 3. CWM Recoveryを起動
     fastboot boot recovery.img
 4. system領域、data領域にB2Gのファイルをコピー
+
     adb shell mount /system
     adb shell mount /data
     adb shell cp /system/media/bootanimation.zip /data/local/bootanimation.zip
