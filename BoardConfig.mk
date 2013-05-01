@@ -44,7 +44,7 @@ TARGET_USES_OVERLAY := true
 TARGET_GRALLOC_USES_ASHMEM := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DUSE_GENLOCK
 TARGET_USES_C2D_COMPOSITION := true
-QC_PROP := true
+QC_PROP := false
 
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
