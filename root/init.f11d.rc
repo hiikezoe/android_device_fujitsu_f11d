@@ -317,9 +317,6 @@ on post-fs-data
     #Create directories for gpsone_daemon services
     mkdir /data/misc/gpsone_d 0770 system system
 
-    #Create directories for QuIPS
-    mkdir /data/misc/quipc 0770 gps system
-
     #Create directories for Location services
     mkdir /data/misc/location 0770 gps gps
     mkdir /data/misc/location/mq 0770 gps gps
@@ -364,10 +361,6 @@ on property:bluetooth.isEnabled=true
 
 on property:bluetooth.isEnabled=false
     start amp_unload
-
-service cnd /system/bin/cnd
-    class late_start
-    socket cnd stream 666 root radio
 
 #Modify, run rmt_storage anyway
 service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p10 /dev/block/mmcblk0p11 /dev/block/mmcblk0p17
@@ -522,18 +515,6 @@ service gpsone_daemon /system/bin/gpsone_daemon
     group system qcom_oncrpc inet
     disabled
 
-service quipc_igsn /system/bin/quipc_igsn
-    class late_start
-    user gps
-    group inet gps
-    disabled
-
-service quipc_main /system/bin/quipc_main
-    class late_start
-    user gps
-    group net_admin wifi inet gps
-    disabled
-
 service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
     class late_start
     user root
@@ -574,12 +555,6 @@ service qcom-post-boot /system/bin/sh /system/etc/init.qcom.post_boot.sh
 
 on property:sys.boot_completed=1
     start qcom-post-boot
-
-service atfwd /system/bin/ATFWD-daemon
-    class late_start
-    user system
-    group system radio
-    onrestart /system/bin/log -t RIL-ATFWD -p w "ATFWD daemon restarted"
 
 service hdmid /system/bin/hdmid
     class late_start
@@ -635,23 +610,6 @@ service sensors_server /system/bin/sensors_server
     user sensor
     group sensor input qcom_oncrpc system
 
-service profiler_daemon /system/bin/profiler_daemon
-    class late_start
-    user root
-    group root
-    disabled
-
-#FUJITSU:2011-12-20 wil start
-service wil-daemon /system/bin/wild
-    class late_start
-    socket wild-if stream 666 root system
-#    disabled
-#FUJITSU:2011-12-20 wil end
-
-service sdcard /system/bin/sdcard /data/media 1023 1023
-    class late_start
-    disabled
-
 on property:persist.fuse_sdcard=true
     start sdcard
 
@@ -661,86 +619,3 @@ service hcidump /system/bin/sh /system/etc/hcidump.sh
     disabled
     oneshot
 
-service fta /system/xbin/ftad
-    class core
-    user  root
-    group root
-#    disabled
-
-# FUJITSU:2012-04-16 powersaved add start
-service powersaved /system/bin/powersaved
-    class late_start
-    user root
-    group root
-    socket powersaved.sock stream 0660 root system
-#    disabled
-# FUJITSU:2012-04-16 powersaved add end
-
-# FUJITSU:2012-02-28 AossCmdInterface service start
-service aoss_if_on /system/bin/AossCmdInterface AP 192.168.11.1
-    user root
-    disabled
-    oneshot
-
-service aoss_if_off /system/bin/AossCmdInterface AP 192.168.43.1
-    user root
-    disabled
-    oneshot
-
-on property:persist.service.aoss_if=1
-    start aoss_if_on
-
-on property:persist.service.aoss_if=0
-    start aoss_if_off
-# FUJITSU:2012-02-28 AossCmdInterface service end
-
-#/* FUJITSU:2012-02-20 TMS modify start */
-service TRPD /system/bin/trpd
-    class late_start
-    user system
-    group audio media
-#    disabled
-
-service TGMD /system/bin/tgmd
-    class late_start
-    user system
-    group audio media
-#    disabled
-
-service TMSD /system/bin/tmsd
-    class late_start
-    user system
-    group audio media
-#    disabled
-#/* FUJITSU:2012-02-20 TMS modify end */
-
-#/* FUJITSU:2012-05-04 TRB modify start */
-service TRBD /system/bin/trbd
-    class late_start
-    user root
-    oneshot
-#    disabled
-#/* FUJITSU:2012-05-04 TRB modify end */
-
-service batt-monitor /system/bin/battery-monitor
-    class core
-    user root
-    group root
-
-service FWupgrade /system/bin/FWupgrade
-    class core
-    user root
-    group root
-    oneshot
-
-service initial_log /system/bin/initial_log
-    class main
-    user root
-    group root
-    oneshot
-    disabled
-
-service mfescand /system/bin/mfescand
-    class main
-    socket mfescand stream 600 system system
-    disabled
