@@ -1,14 +1,71 @@
-# F-11D
+# B2G for F-11D
 
-## Boot modes
+## 概要
 
-### Recovery mode
+B2G for F-11Dは、オリジナルのAndroid環境を残したままインストールできます。
+
+いくつかの機能はB2Gではまだ利用できませんが、B2G用Webアプリを実機でテストしたいという要望には十分応えられるはずです。
+
+## ダウンロード
+    https://drive.google.com/folderview?id=0B-JRBuba3UhLWDlmOFN3SkNvWDQ&usp=sharing
+
+## インストール
+1. fastbootを起動
+    adb reboot bootloader
+2. recovery領域にB2Gのブートイメージを焼く
+    fastboot flash recovery boot.img
+3. CWM Recoveryを起動
+    fastboot boot recovery.img
+4. system領域、data領域にB2Gのファイルをコピー
+    adb shell mount /system
+    adb shell mount /data
+    adb shell cp /system/media/bootanimation.zip /data/local/bootanimation.zip
+    adb push userdata.tar.gz /
+    adb push system.tar.gz /
+    adb shell tar zxvf /userdata.tar.gz -C /
+    adb shell tar zxvf /system.tar.gz -C /
+    adb shell umount /system
+    adb shell umount /data
+
+## ソースコードからのビルド オススメ！!
+
+    $ git clone git://github.com/mozilla-b2g/B2G.git
+    $ cd B2G
+    $ hg clone http://hg.mozilla.org/l10n-central/ja gecko-l10n/ja
+    $ hg clone http://hg.mozilla.org/gaia-l10n/ja gaia-l10n/ja
+    $ wget https://raw.github.com/hiikezoe/android_device_fujitsu_f11d/b2g/f11d.xml
+    $ DEVICE=f11d ./config.sh f11d f11d.xml (*1)
+    $ ./build.sh
+
+### インストール
+
+1. fastbootを起動
+    adb reboot bootloader
+2. recovery領域にB2Gのブートイメージを焼く
+    fastboot flash recovery out/target/product/f11d/boot.img
+3. CWM Recoveryを起動
+    fastboot boot recovery.img
+4. system領域、data領域にB2Gのファイルをコピー
+    ...
+
+## 起動方法
+    メニュー + 戻る + 電源 On
+
+or
+
+    adb reboot recovery
+
+## Miscellaneous information
+
+### Boot modes
+
+#### Recovery mode
     Menu + Back + Power on
 
-### MMC Storage mode (05c6:9006)
+#### MMC Storage mode (05c6:9006)
     Volume up + Volume down + Power on
 
-## Partition
+### Partition
 
     mmcblk0p1  sysboot(AMMS)
     mmcblk0p2
