@@ -144,14 +144,6 @@ case "$baseband" in
         start gpsone_daemon
         start bridgemgrd
 esac
-case "$target" in
-        "msm7630_surf" | "msm8660" | "msm8960")
-        start quipc_igsn
-esac
-case "$target" in
-        "msm7630_surf" | "msm8660" | "msm8960")
-        start quipc_main
-esac
 
 case "$target" in
     "msm7630_surf" | "msm7630_1x" | "msm7630_fusion")
