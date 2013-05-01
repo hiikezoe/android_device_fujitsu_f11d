@@ -18,15 +18,15 @@ B2G for F-11Dは、オリジナルのAndroid環境を残したままインスト
     fastboot boot recovery.img
 4. system領域、data領域にB2Gのファイルをコピー
 
-    adb shell mount /system
-    adb shell mount /data
-    adb shell cp /system/media/bootanimation.zip /data/local/bootanimation.zip
-    adb push userdata.tar.gz /
-    adb push system.tar.gz /
-    adb shell tar zxvf /userdata.tar.gz -C /
-    adb shell tar zxvf /system.tar.gz -C /
-    adb shell umount /system
-    adb shell umount /data
+    $ adb shell mount /system
+    $ adb shell mount /data
+    $ adb shell cp /system/media/bootanimation.zip /data/local/bootanimation.zip
+    $ adb push userdata.tar.gz /
+    $ adb push system.tar.gz /
+    $ adb shell tar zxvf /userdata.tar.gz -C /
+    $ adb shell tar zxvf /system.tar.gz -C /
+    $ adb shell umount /system
+    $ adb shell umount /data
 
 ## ソースコードからのビルド オススメ！!
 
