@@ -47,12 +47,19 @@ B2G for F-11Dは、オリジナルのAndroid環境を残したままインスト
 ### インストール
 
 1. fastbootを起動
+
         $ adb reboot bootloader
+
 2. recovery領域にB2Gのブートイメージを焼く
+
         $ fastboot flash recovery out/target/product/f11d/boot.img
+
 3. CWM Recoveryを起動
+
         $ fastboot boot recovery.img
+
 4. system領域、data領域にB2Gのファイルをコピー
+
         $ ...
 
 ## 起動方法
