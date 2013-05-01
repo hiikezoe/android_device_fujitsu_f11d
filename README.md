@@ -7,7 +7,7 @@ B2G for F-11Dは、オリジナルのAndroid環境を残したままインスト
 いくつかの機能はB2Gではまだ利用できませんが、B2G用Webアプリを実機でテストしたいという要望には十分応えられるはずです。
 
 ## ダウンロード
-    https://drive.google.com/folderview?id=0B-JRBuba3UhLWDlmOFN3SkNvWDQ&usp=sharing
+<https://drive.google.com/folderview?id=0B-JRBuba3UhLWDlmOFN3SkNvWDQ&usp=sharing>
 
 ## インストール
 1. fastbootを起動
