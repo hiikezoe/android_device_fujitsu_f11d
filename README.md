@@ -24,8 +24,6 @@ B2G for F-11Dは、オリジナルのAndroid環境を残したままインスト
 
 4. system領域、data領域にB2Gのファイルをコピー
 
-        $ adb shell mount /system
-        $ adb shell mount /data
         $ adb shell cp /system/media/bootanimation.zip /data/local/bootanimation.zip
         $ adb push userdata.tar.gz /
         $ adb push system.tar.gz /
