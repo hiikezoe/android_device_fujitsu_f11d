@@ -29,7 +29,6 @@
   <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="platform/bionic" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="development" name="platform/development" />
   <project path="device/common" name="device/common" />
   <project path="device/sample" name="device/sample" />
@@ -64,7 +63,6 @@
   <project path="external/llvm" name="platform/external/llvm" />
   <project path="external/mksh" name="platform/external/mksh" />
   <project path="external/opensans" name="platform_external_opensans" remote="b2g" revision="master" />
-  <project path="external/openssl" name="platform/external/openssl" />
   <project path="external/protobuf" name="platform/external/protobuf" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
   <project path="external/screencap-gonk" name="screencap-gonk" remote="b2g" revision="master" />
@@ -83,8 +81,6 @@
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
   <project path="external/hostap" name="platform/external/hostap" />
-  <project path="external/zlib" name="platform/external/zlib" />
-  <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="frameworks/base" name="platform/frameworks/base" />
@@ -111,5 +107,10 @@
   <project path="vendor/qcom/opensource/omx/mm-core" name="platform/vendor/qcom-opensource/omx/mm-core" />
   <project path="vendor/qcom/adreno200" name="android_vendor_qcom_adreno200" remote="hiikezoe" revision="cm-9.1.0" />
   <project path="hardware/ril" name="platform/hardware/ril" remote="caf" revision="fe9a3f63922143b57e79ed570bab2328df8c83a5"/>
+  <project path="external/busybox" name="android_external_busybox" remote="cyanogenmod" revision="ics"/>
+  <project path="external/openssl" name="android_external_openssl" remote="cyanogenmod" revision="ics"/>
+  <project path="external/yaffs2" name="android_external_yaffs2" remote="cyanogenmod" revision="ics"/>
+  <project path="external/zlib" name="android_external_zlib" remote="cyanogenmod" revision="ics"/>
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="cyanogenmod" revision="ics"/>
 </manifest>
 
