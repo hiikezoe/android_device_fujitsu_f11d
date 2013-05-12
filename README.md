@@ -2,37 +2,53 @@
 
 ## 概要
 
-B2G for F-11Dは、オリジナルのAndroid環境を残したままインストールできます。
+B2G for F-11Dは、Androidの/systemおよび/dataパーティションに手を加えることなく、
+Boot to Geckoを使用することができます。
 
 いくつかの機能はB2Gではまだ利用できませんが、B2G用Webアプリを実機でテストしたいという要望には十分応えられるはずです。
 
 ## ダウンロード
 <https://drive.google.com/folderview?id=0B-JRBuba3UhLWDlmOFN3SkNvWDQ&usp=sharing>
 
-## インストール
-1. fastbootを起動
+## <a name="boot_from_fastboot">fastbootでお試し
+1. SDカードにb2g-system.imgおよびuserdata.imgをコピー
+
+        $ adb shell mkdir -p /sdcard/b2g
+        $ adb push b2g-system.img /sdcard/b2g
+        $ adb push userdata.img /sdcard/b2g
+
+2. fastbootを起動
 
         $ adb reboot bootloader
 
-2. recovery領域にB2Gのブートイメージを焼く
+3. fastbootからB2Gのブートイメージを起動
+
+        $ fastboot boot boot.img
+
+## <a name "boot_from_recovery">リカバリー領域にインストールしてAndroidとデュアルブート
+1. SDカードにb2g-system.imgおよびuserdata.imgをコピー
+
+        $ adb shell mkdir -p /sdcard/b2g
+        $ adb push b2g-system.img /sdcard/b2g
+        $ adb push userdata.img /sdcard/b2g
+
+2. fastbootを起動
+
+        $ adb reboot bootloader
+
+3. recovery領域にB2Gのブートイメージを焼く
 
         $ fastboot flash recovery boot.img
 
-3. CWM Recoveryを起動
+### 起動方法
 
-        $ fastboot boot recovery.img
+    メニュー + 戻る + 電源 On
 
-4. system領域、data領域にB2Gのファイルをコピー
+or
 
-        $ adb shell cp /system/media/bootanimation.zip /data/local/bootanimation.zip
-        $ adb push userdata.tar.gz /
-        $ adb push system.tar.gz /
-        $ adb shell tar zxvf /userdata.tar.gz -C /
-        $ adb shell tar zxvf /system.tar.gz -C /
-        $ adb shell umount /system
-        $ adb shell umount /data
+    adb reboot recovery
 
-## ソースコードからのビルド オススメ！!
+## ソースコードからのビルド
 
     $ git clone git://github.com/mozilla-b2g/B2G.git
     $ cd B2G
@@ -42,30 +58,7 @@ B2G for F-11Dは、オリジナルのAndroid環境を残したままインスト
     $ DEVICE=f11d ./config.sh f11d f11d.xml (*1)
     $ ./build.sh
 
-### インストール
-
-1. fastbootを起動
-
-        $ adb reboot bootloader
-
-2. recovery領域にB2Gのブートイメージを焼く
-
-        $ fastboot flash recovery out/target/product/f11d/boot.img
-
-3. CWM Recoveryを起動
-
-        $ fastboot boot recovery.img
-
-4. system領域、data領域にB2Gのファイルをコピー
-
-        $ ...
-
-## 起動方法
-    メニュー + 戻る + 電源 On
-
-or
-
-    adb reboot recovery
+(*1) Need https://github.com/hiikezoe/B2G/commit/1a6103a459bc9ca6b4a26a927776b36fe0e188d0
 
 ## Miscellaneous information
 
