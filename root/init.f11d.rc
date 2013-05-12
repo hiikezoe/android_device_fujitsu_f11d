@@ -64,7 +64,7 @@ on emmc-fs
 
     mount vfat /dev/block/mmcblk1p1 /sdcard
     mount ext4 loop@/mnt/sdcard/b2g/b2g-system.img /b2g
-    mount ext4 loop@/mnt/sdcard/b2g/userdata.img /b2g
+    mount ext4 loop@/mnt/sdcard/b2g/userdata.img /data
 
 #}end, QCI Jay-Huang
 on boot

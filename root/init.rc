@@ -118,7 +118,6 @@ on emmc-fs
     mount ext4 /dev/block/mmcblk0p13 /system rw barrier=1
     wait /dev/block/mmcblk0p14
     exec /system/bin/e2fsck -p /dev/block/mmcblk0p14
-    mount ext4 /dev/block/mmcblk0p14 /data nosuid nodev barrier=1 auto_da_alloc
     mount ext4 /dev/block/mmcblk0p15 /persist nosuid nodev barrier=1
     mount ext4 /dev/block/mmcblk0p16 /cache nosuid nodev barrier=1
 
