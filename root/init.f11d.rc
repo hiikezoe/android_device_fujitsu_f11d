@@ -66,6 +66,10 @@ on emmc-fs
     mount ext4 loop@/mnt/sdcard/b2g/b2g-system.img /b2g
     mount ext4 loop@/mnt/sdcard/b2g/userdata.img /data
 
+    chmod 0755 /system/b2g/b2g
+    chmod 0755 /system/b2g/plugin-container
+    chmod 0755 /system/b2g/updater
+
 #}end, QCI Jay-Huang
 on boot
 # Clark
