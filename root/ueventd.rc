@@ -145,7 +145,7 @@
 /dev/block/mmcblk0p17     0660   system     system
 /dev/block/mmcblk0p18     0660   system     system
 /dev/usb_accessory        0660   root       usb
-/dev/video*	          0660   system     camera 
+/dev/video*               0660   system     camera
 /dev/tun                  0660   system     vpn
 #regular apps need to be able to open ion
 /dev/ion                  0664   system     system
