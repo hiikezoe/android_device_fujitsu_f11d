@@ -19,7 +19,6 @@ bin/killer
 bin/keystore_cli
 bin/gdbserver
 bin/flash_image
-bin/fakeperm
 bin/decoder
 bin/b2g.sh
 bin/b2g-ps
