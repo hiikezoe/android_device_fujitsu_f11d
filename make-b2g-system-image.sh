@@ -3,6 +3,7 @@
 PRODUCT_OUT=../../../out/target/product/f11d
 B2G_SYSTEM_BASE=$PRODUCT_OUT/b2g-system
 
+rm -rf $B2G_SYSTEM_BASE
 mkdir -p $B2G_SYSTEM_BASE
 
 echo "Copying b2g system image files ..."
