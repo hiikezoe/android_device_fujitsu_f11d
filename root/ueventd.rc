@@ -203,6 +203,6 @@
 #/* FUJITSU:2012-03-15 CYPRESS TOUCH PRESS add end */
 
 # FUJITSU:2012-04-27 SensorHAL add start
-/dev/fj_wm_ctl            0600  sensor       sensor
-/dev/compass              0600  sensor       sensor
+/dev/fj_wm_ctl            0600  system       system
+/dev/compass              0600  system       system
 # FUJITSU:2012-04-27 SensorHAL add end
