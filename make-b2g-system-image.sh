@@ -15,4 +15,4 @@ for FILE in `cat b2g-files.txt | grep -v ^# | grep -v ^$`; do
 done
 
 rm -f $PRODUCT_OUT/b2g-system.img
-make_ext4fs -l 48M $PRODUCT_OUT/b2g-system.img $B2G_SYSTEM_BASE
+make_ext4fs -l 56M $PRODUCT_OUT/b2g-system.img $B2G_SYSTEM_BASE
